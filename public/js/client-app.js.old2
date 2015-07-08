@@ -1,0 +1,130 @@
+
+var data = {"mx140-gobernadores": {"@presidenciamx": 140, "productores": 137, "#morelos": 403, "estudiantes": 119, "#puebla": 286, "#quintanaroo": 157, "motivo": 153, "#m\u00e9xico": 176, "cumplea\u00f1os": 260, "inversi\u00f3n": 298, "nacional": 270, "#yucat\u00e1n": 133, "@epn": 216, "2015": 143, "a\u00f1os": 132, "justicia": 121, "educaci\u00f3n": 157, "seguridad": 159, "familias": 127, "salud": 146, "reuni\u00f3n": 140, "inauguramos": 148, "@gobyucatan": 170, "j\u00f3venes": 130, "acciones": 142, "desarrollo": 124, "ma\u00f1ana": 133, "m\u00e9xico": 156, "desde": 145, "cultura": 118}, "mx140-diputados": {"@martibatres": 148, "est\u00e1": 114, "mucho": 85, "#pan": 129, "@javier_corral": 136, "@magdagraciasfch": 91, "cumplea\u00f1os": 119, "@conchitadiez": 110, "@landyberzunza": 139, "nacional": 185, "mayores": 106, "@lopezobrador_": 88, "sobre": 102, "@epn": 157, "a\u00f1os": 168, "mujeres": 121, "#oaxaca": 96, "pa\u00eds": 146, "@zuleymahuidobro": 107, "@juan1250mexico": 93, "verde": 90, "comisi\u00f3n": 92, "@gabymedrano83": 84, "ni\u00f1o": 87, "marcha": 91, "@ferbelaunzaran": 534, "@ricardomeb": 208, "m\u00e9xico": 233, "desde": 102, "d\u00edas": 96}, "puebla140": {"@dehielo77": 138, "incendio": 110, "@sintesisweb": 209, "#puebla": 548, "ante": 113, "#m\u00e9xico": 140, "serd\u00e1n": 142, "hospital": 147, "robo": 108, "contra": 115, "#internacional": 160, "carrera": 191, "sobre": 134, "2015": 115, "@tribunadeportes": 126, "a\u00f1os": 106, "tras": 179, "galer\u00edas": 108, "salud": 119, "j\u00f3venes": 112, "@reporpue11": 180, "valle": 123, "#particicpa": 112, "puebla": 523, "hasta": 119, "m\u00e9xico": 250, "moreno": 128, "@jacky_lr": 130, "buap": 130, "#lom\u00e1sle\u00eddo": 105}, "mx140-ejecutivo": {"#ahorrarenerg\u00eda": 195, "cuesti\u00f3n": 195, "#ent\u00e9rate": 113, "orientaci\u00f3n": 227, "mural": 154, "h\u00e1bitos": 198, "#nosmuevelapaz": 298, "#d\u00edadel\u00e1rbol": 147, "@nosmuevelapaz": 152, "#m\u00e9xico": 311, "nacional": 233, "sobre": 226, "@epn": 120, "2015": 147, "siguiendo": 195, "diferencia": 197, "pago": 108, "informaci\u00f3n": 159, "sistema": 132, "usuarios": 203, "@conabio": 145, "@gobrep": 141, "social": 110, "#kaz\u00e1n2015": 119, "mundial": 115, "#cfetips": 195}, "mx140-opinion": {"#ent\u00e9rate": 279, "verdad": 245, "griego": 227, "absoluta": 185, "@enfoquenoticias": 230, "#primeronoticias": 135, "#guarderiaabc": 174, "castigo": 236, "#grecia": 154, "contra": 171, "@adela_micha": 421, "sobre": 263, "@epn": 367, "refer\u00e9ndum": 276, "#opini\u00f3n": 141, "a\u00f1os": 374, "justicia": 268, "francisco": 129, "memoria": 245, "#ahora": 185, "grecia": 339, "papa": 147, "pa\u00eds": 133, "resultados": 125, "#presente": 225, "#aguasblancas": 212, "#impunidad": 357, "m\u00e9xico": 535, "tras": 184, "meses": 181}, "mx140-senadores": {"#laordenfueabatir": 133, "@marianagc": 169, "@accionnacional": 128, "@senadomexicano": 129, "@javier_corral": 179, "#m\u00e9xico": 104, "mucho": 93, "nacional": 166, "@analiliaherrera": 103, "@epigmenioibarra": 201, "sobre": 282, "@epn": 94, "porque": 189, "#paraepnpidocastigo": 134, "@larioshector": 120, "cuba": 97, "reuni\u00f3n": 160, "interparlamentaria": 108, "comisi\u00f3n": 191, "#chiapas": 112, "ayotzinapafueelejercito": 174, "niperdonniolvido": 174, "elecci\u00f3n": 146, "m\u00e9xico": 274, "desde": 134, "@hectoryunes": 120}};
+/*var data = $.getJSON( "data/pack.json", function( data ) {
+    console.log("success...")
+    console.log (data.puebla140)
+    });
+*/
+var diameter = 600;
+var newcat = "puebla140";
+
+// create chart svg space
+var svg = d3.select('#chart').append('svg')
+	.attr('width', diameter)
+	.attr('height', diameter)
+    .attr('margin-top', 500);
+
+// define the omnitooltip
+var tooltip = d3.select("body")
+    .append("div")
+    .attr('id', 'tooltip')
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden")
+    .style("color", "white")
+    .style("padding", "8px")
+    .style("background-color", "rgba(0, 0, 0, 0.75)")
+    .style("border-radius", "6px")
+    .style("font", "12px sans-serif")
+    .text(":)");
+
+
+
+// invoke pack layout and misterious filtering
+var bubble = d3.layout.pack()
+    .sort(null)
+	.size([diameter, diameter])
+	.padding(-2) // padding between adjacent circles
+	.value(function(d) {return d.size;}); // new data will be loaded to bubble layout
+
+
+function drawBubbles(newcat){
+    var bop = svg.selectAll('g')
+        .data({}, function(d) {return d;});
+        bop.exit().remove();
+
+
+    var nodes = bubble.nodes(processData(data[newcat]))
+	    .filter(function(d) { return !d.children; }); // filter out the outer bubble 
+    console.log(data[newcat]);
+
+    //create groups for each, append circle and text
+    var vis = svg.selectAll('g')
+	    .data(nodes, function(d) {return d.name;})
+	    .enter().append('g')
+        .attr('transform', function(d) { return 'translate(' + d.x + ',' + d.y + ')'; });
+
+    vis.append('circle') 
+	    .attr('r', function(d) { return d.r; })
+	    .attr('class', function(d) { return sizeToClass(d.value); })
+
+        .on("mouseover", function(d) {
+            tooltip.text(d.name + ": " + d.value);
+            tooltip.style("visibility", "visible");
+        })
+        .on("mousemove", function() {
+            return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");
+        })
+        .on("mouseout", function(){return tooltip.style("visibility", "hidden");
+        });
+
+    vis.append("text")
+        .attr("dy", ".3em")
+        .attr('class', function(d) { return sizeToClass(d.value); })
+        .style("text-anchor", "middle")
+        .style("stroke", "#FFFFFF")
+        .style("fill", "#F0F0F0")
+        .style("pointer-events", "none")
+        .text(function(d) { return d.name; });
+    };
+
+
+
+
+// complementary functions
+function processData(pata) {
+	var obj = pata;
+	var newDataSet = []; 
+    console.log(pata);
+	for(var prop in obj) {
+		newDataSet.push({name: prop, className: prop.toLowerCase(), size: obj[prop]});
+	}
+	console.log(":P Nom nom, data");
+    console.log(newDataSet);
+	return {children: newDataSet};
+}
+
+
+function changeCategory() {
+    newcat = document.getElementById("categoria").value;
+    console.log('[Updating to]: ' + newcat);
+    drawBubbles(newcat);
+    }
+
+function sizeToClass(siz){
+    if (siz < 50) return "menc10";
+    if (siz>=50 && siz < 100) return "menc50";
+    if (siz>=100 && siz < 500) return "menc1c";
+    if (siz>=500 && siz < 1000) return "menc5c";
+    if (siz>=1000 && siz < 5000) return "menc1k";
+    if (siz>=5000 && siz < 10000) return "menc5k";
+    if (siz>=10000) return "menc1h";
+    else return "otros";
+}
+
+var main = function (){
+    drawBubbles(newcat);
+
+
+    $('#colorstrip').colorstrip({
+        minInterval: 6000,
+        maxInterval: 12000,
+        minWidth: 10,
+        maxWidth: 80,
+        opacity: 0.5,
+        colors: ['#f90', '#39c', '#c00', '#090', '#c3f', '#007', '#69f']
+    });
+}
+
+
+$(document).ready(main);
