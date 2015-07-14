@@ -26,8 +26,8 @@ gray3: #8C8C8B;
 body {
     font-family: 'SF Movie', sans-serif;
     /*margin: 1em;*/
-    background: #FFF8EF;
-    color: #FFFFFF;
+    background: #FFF6EA;
+    color: #FFF6EA;
     font-color: #FFFFFF;
     font-padding: 2;
 }
@@ -145,6 +145,7 @@ text .menc1c {
 	font-family: 'SF Movie Poster', sans-serif;
 	font-style: bold;
 	color: #FFFFFF;
+	top: 2cm;
 
 }
 
