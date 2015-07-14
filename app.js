@@ -15,7 +15,7 @@ Its structure/procedure is as follows:
 
 
 // 1. invoke requirements
-var port = (process.env.VCAP_APP_PORT || 5000),
+var port = (process.env.PORT || 5000),
 	express = require('express'),
 	twitter = require('twitter'),
 	natural = require('natural'),
