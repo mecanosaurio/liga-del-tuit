@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>#MéxicoEn140 :: beta 1.0</title>
+	<meta name="description" content="MéxicoEn140 es una herramienta de visualización de los temás más relevantes discutidos en Twitter por un grupo de cuentas influyentes en la política mexicana.">
+	<meta name="author" content="@mecanosaurio (para Ethos, Laboratorio de Políticas Públicas).">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--link href="http://fonts.googleapis.com/css?family=Lobster+Two:400,700italic" rel="stylesheet" type="text/css"-->
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+
+<body>
+	<header>
+    	<div class="row">
+      		<div class="col-md-1" style="position:relative; top:1.9cm; left:0.3cm;">
+      		</div>
+
+      		<div class="col-md-8" style="position:relative; top:1.9cm; left:0.3cm;">
+      			<a class="bigbutts">#MÉXICOen140</a>
+      			<img src="data/logo_mx140.png" class = "logo" alt="logo-mx140" height="80" width="75" style="position:relative; bottom:1cm;"/>
+      		</div>
+			
+      		<div class="col-md-3" style="position:relative; top:1.75cm; ">
+      			<a><img src="data/logo_ethos.png" alt="logo ethos" width="120" height="190"></a>
+      		</div>    	
+
+      	</div>
+	</header>
+	
+	<div class="row">
+    	<div class="col-md-1" style="position:relative; top:1.9cm; left:0.3cm;">
+      		</div>
+
+    	<nav class="col-md-8" >
+      		<ul class="nav nav-pills">
+        		<li role="presentation" class = "selectable" class="active" value="all"><a href="#">TODOS</a></li>  
+        		<li role="presentation" class = "selectable" value="mx140-ejecutivo"><a href="#">EJECUTIVO</a></li>
+        		<li role="presentation" class = "selectable" value="mx140-diputados"><a href="#" >DIPUTADOS</a></li>
+        		<li role="presentation" class = "selectable" value="mx140-senadores"><a href="#">SENADORES</a></li>
+        		<li role="presentation" class = "selectable" value="mx140-gobernadores"><a href="#">GOBERNADORES</a></li>
+        		<li role="presentation" class = "selectable" value="mx140-opinion"><a href="#">LÍDERES de OPINIÓN</a></li>
+        		<li role="presentation" class = "selectable" value="mx140-pri"><a href="#">PRI</a></li>
+        		<li role="presentation" class = "selectable" value="mx140-pan"><a href="#">PAN</a></li>
+       			<li role="presentation" class = "selectable" value="mx140-prd"><a href="#">PRD</a></li>
+        		<li role="presentation" class = "selectable" value="puebla140"><a href="#">Puebla</a></li>
+      		</ul>
+    	</nav>
+    </div>
+    <div id="colorstrip"></div>
+	
+
+	<fieldset>
+
+		<section id="chart"></section>
+		
+		<legend>
+			<a href="#"><br> </a>
+
+			<div id="navBtn-a" class='block'>
+    			<div>
+    				<a href="#" id="toggle-slide-button-1">
+    				<span class="glyphicon glyphicon-check" style="color:white"></span>
+    				</a>
+    			</div>
+			</div>
+
+			<a href="#"><br> </a>
+			
+			<div id="navBtn-b">
+    			<a href="#" id="toggle-slide-button-2">
+    				<span class="glyphicon glyphicon-hand-up" style="color:white"></span>
+    			</a>
+			</div>
+
+			<a href="#"><br> </a>
+			<a href="#"><br> </a>
+			<a href="#"><br> </a>
+
+			<div id="navBtn-c">
+    			<a href="#" id="toggle-slide-button-3">
+    				<span class="glyphicon glyphicon-cog" style="color:white"></span>
+    			</a>
+			</div>
+			<p id="panela" style="opacity: 0">
+				#MéXICOen140 es una herramienta que 
+				muestra qué están diciendo los 
+				tuiteros más influyentes del país.
+  			</p> 
+			<p id="panelb" style="opacity: 0">
+				Haz click en las distintas categorías
+				y descubre qué es lo más mencionado
+				por cada grupo de usuarios. (<a href="#">!!!</a>)
+  			</p>
+
+
+		</legend>
+	</fieldset>
+
+	<footer>
+		(C) 2015 Todos los derechos reservados. <br>
+		Este es un proyecto de Ethos Laboratorio de Políticas Públicas <br>
+		en colaboración con BlackCube Studio.
+  	</footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--script src="js/load-data.js"></script-->
+	<script type="text/javascript" src="js/d3.min.js"></script>
+	<script type="text/javascript" src='js/colorstrip.js'></script>
+	<script type="text/javascript" src="js/client-app.js"></script>
+	<!--script type="text/javascript" src="data/pack.json"></script-->
+
+ </body>
+</html>
