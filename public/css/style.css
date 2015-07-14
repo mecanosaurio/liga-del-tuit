@@ -61,6 +61,8 @@ p, footer {
 footer {
 	font-size: 1.2em;
 	margin-top: 3em; /*[3em]*/
+	text-align: center;
+	vertical-align: center;
 }
 
 
