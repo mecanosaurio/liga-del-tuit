@@ -9,7 +9,7 @@ var diameter = 650;
 var newcat = "all";
 
 // create chart svg space
-var svg = d3.select('#chart').append('svg')
+var svg = d3.select('svg')
 	.attr('width', diameter+100)
 	.attr('height', diameter)
     .attr('margin-top', 200);
