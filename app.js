@@ -24,7 +24,7 @@ var cool = require('cool-ascii-faces');
 	
 // 2. express app basic config
 var app = express();
-app.use('/public', express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 // 3. twitter API config and object
 var config = {
