@@ -156,7 +156,7 @@ if __name__ == '__main__':
 	#cPickle.dump (buffers, open('buffers.cpk','w'))
 	stopwords = [w.strip().rstrip().decode('utf8','ignore') for w in open('nsw.txt','r').readlines()]
 	print stopwords
-	max_buffer_size = 50000;
+	max_buffer_size = 10000;
 	max_most_common_words = 30;
 	min_bag_size = 5
 
