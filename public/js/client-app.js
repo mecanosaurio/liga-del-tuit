@@ -189,13 +189,13 @@ var main = function (){
 
     // draw the colorstrip below nav
     $('#colorstrip').colorstrip({
-        minInterval: 8000,
-        maxInterval: 23000,
+        minInterval: 3000,
+        maxInterval: 15000,
         minWidth: 20,
         maxWidth: 70,
-        opacity: 0.8,
+        opacity: 0.4,
         //colors: ['#f90', '#39c', '#c00', '#090', '#c3f', '#007', '#69f']
-        colors: ['#FFD7C0', '#FFA67B', '#FF6446', '#D3D3D2', '#B6B7B5', '#8C8C8B']
+        colors: ['#FFD7C0', '#FFA67B', '#FF6446', '#D3D3D2', '#FFD7C0', '#FFA67B', '#FF6446']
     });
 
     // click on nav event handler
