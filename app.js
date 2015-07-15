@@ -67,7 +67,7 @@ job.start();
 // 7. routings
 app.get("/", function (req, res) {
     //send "Hello World" to the client as html
-    res.send("<h2>Esta es la raíz</h2");
+    res.send("<h2>Start Here</h2");
 }); 
 
 app.get('/cool', function(req, res) {

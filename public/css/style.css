@@ -12,6 +12,12 @@
   src: url('SF Movie Poster.ttf') format("truetype");
 }
 
+@font-face {
+  font-family: coolvetica;
+  src: url('coolvetica_rg.ttf') format("truetype");
+}
+
+
 /*
 orange1: #FFD7C0;
 orange2: #FFA67B;
@@ -337,22 +343,36 @@ gray3: #8C8C8B;
     position: absolute;
     width: 160px;
     height: 120px;
-	font-family: 'SF Movie Poster', sans-serif;
+    font-family: 'coolvetrica', helvetica;
+	/*font-family: 'SF Movie Poster', sans-serif;*/
 	font-style: bold;
-    font-size: 1.2em;
+    font-size: 0.7em;
     opacity:1;
 	color: #FFFFFF;
 	text-align: center;
+	padding-top: 0.3cm;
 }
 
 #panelb {
     position: relative;
     width: 160px;
     height: 120px;
-	font-family: 'SF Movie Poster', sans-serif;
-    font-size: 1.2em;
+	/*font-family: 'SF Movie Poster', sans-serif;*/
+    font-family: 'coolvetrica', helvetica;
+    font-size: 0.7em;
     opacity:1;
 	color: #FFFFFF;
 	text-align: center;
-	bottom: -8px;
+	bottom: -0.5cm;
+}
+
+/** -------------qtip -----------------*/
+.qtip-mx{
+    border-color: #FFFFFF;
+    background-color: #000000;
+    opacity: 0.8;
+}
+.qtip-mx .qtip-content{
+    font-family: 'coolvetrica', helvetica;
+    font-size: 12px;
 }
