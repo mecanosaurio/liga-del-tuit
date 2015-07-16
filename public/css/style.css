@@ -382,13 +382,21 @@ gray3: #8C8C8B;
     font-size: 12px;
 }
 
+.qtip{
+	opacity: 0.8;
+	color: white;
+	padding: 8px;
+    background-color: #AAAAAA;
+    border-radius: 16px;
+}
+
 h6{
 	font-family: 'SF Movie', sans-serif;
     /*margin: 1em;*/
     color: #FFF6EA;
     font-color: #FFFFFF;
     font-padding: 2;
-    font-size:12px;
+    font-size:2em;
 }
 
 .twcontainer{
