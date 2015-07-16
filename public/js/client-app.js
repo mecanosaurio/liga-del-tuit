@@ -156,7 +156,7 @@ function processData(pata) {
 	for(var prop in obj) {
 		newDataSet.push({name: prop, className: prop.toLowerCase(), size: obj[prop]});
 	}
-	console.log("[:P] Nom nom,"+obj);
+	console.log("[:P]: "+obj);
     //console.log(newDataSet);
 	return {children: newDataSet};
 }
@@ -269,26 +269,6 @@ var main = function (){
         }
         state3 = !state3;  
     });
-
-    /*/ ubertooltips
-    $("circle").each(function(){
-        $(this).qtip({
-            show: 'click',
-            hide:'unfocus',
-            title: 'catname',
-            content:{
-                attr: 'catname'
-            },
-            style: {
-                classes: 'qtip-dark qtip-rounded qtip-shadow qtip-mx',
-            },
-            position: {
-                my: 'bottom left',  // Position my top left...
-                at: 'top right', // at the bottom right of...
-                target: $(this) // my target
-            }
-        })
-    })*/
 }
 
 
