@@ -384,10 +384,10 @@ gray3: #8C8C8B;
 }
 
 .qtip{
-	opacity: 0.8;
 	color: white;
 	padding: 8px;
-    background-color: #AAAAAA;
+    background-color: #8C8C8B;
+	opacity: 0.8;
     border-radius: 16px;
 }
 
