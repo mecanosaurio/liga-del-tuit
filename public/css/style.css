@@ -162,7 +162,8 @@ text .menc1c {
     color: #8C8C8B;
 	font-family: 'SF Movie Poster', sans-serif;
 	font-style: bold;
-	text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+	font-padding: 2px;
+	/*text-shadow: 1px 1px 0 rgba(0,0,0,0.4);*/
 }
 
 .othertext{
@@ -397,7 +398,7 @@ gray3: #8C8C8B;
     color: #FFF6EA;
     font-color: #FFFFFF;
     font-padding: 6;
-    font-size:30px;
+    font-size:28px;
 }
 
 .twcontainer{
@@ -406,5 +407,5 @@ gray3: #8C8C8B;
     color: #FFFFFF;
     font-color: #FFFFFF;
     font-padding: 2;
-    font-size:12px;
+    font-size:11px;
 }
