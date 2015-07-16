@@ -378,6 +378,7 @@ gray3: #8C8C8B;
     border-color: #FFFFFF;
     background-color: #000000;
     opacity: 0.8;
+    width: 300px;
 }
 .qtip-mx .qtip-content{
     font-family: 'coolvetrica', helvetica;
