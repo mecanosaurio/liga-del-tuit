@@ -84,7 +84,7 @@ function drawBubbles(newcat){
     // add the div containers for tooltips with custom content
     vis.append("div")
         .attr("class", "hidden")
-        .text(function(d) { return tts[d.name]; });
+        .text(function(d) { return tts[newcat][d.name]; });
         //.text("<blockquote class=\"twitter-tweet\" lang=\"en\"><p lang=\"es\" dir=\"ltr\">méxico en 140 <a href=\"http://t.co/g8aMZtio1G\">pic.twitter.com/g8aMZtio1G</a></p>&mdash; Human on a Chip (@mecanosaurio) <a href=\"https://twitter.com/mecanosaurio/status/621113642021359617\">July 15, 2015</a></blockquote><blockquote class=\"twitter-tweet\" lang=\"en\"><p lang=\"en\" dir=\"ltr\">CONSUME ; art by Hal Hefner <a href=\"http://t.co/8kjBEYS3Gh\">pic.twitter.com/8kjBEYS3Gh</a></p>&mdash; Best Trippy Art (@strictlyTRIPPPY) <a href=\"https://twitter.com/strictlyTRIPPPY/status/618924143048699904\">July 8, 2015</a></blockquote>");
         //.text("<a href=\"http://twitter.com/SleepyKitty_/status/621150823314288640\"><div class=\"content\">@85_alan_85 the event is over in like two days so I would do the story if I were u. I'm close to getting that SR nozomi card tho</div></a>");
         /*
