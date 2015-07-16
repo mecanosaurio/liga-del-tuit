@@ -118,7 +118,7 @@ function drawBubbles(newcat){
                 text: $(this).siblings('div').text()
             },
             style: {
-                classes: 'qtip-rounded qtip-shadow qtip-mx',
+                classes: 'qtip-dark qtip-rounded qtip-shadow qtip-mx',
             },
             position: {
                 my: 'center left',  // Position my top left...
