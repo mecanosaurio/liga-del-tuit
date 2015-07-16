@@ -85,20 +85,6 @@ function drawBubbles(newcat){
     vis.append("div")
         .attr("class", "hidden")
         .text(function(d) { return tts[newcat][d.name]; });
-        //.text("<blockquote class=\"twitter-tweet\" lang=\"en\"><p lang=\"es\" dir=\"ltr\">méxico en 140 <a href=\"http://t.co/g8aMZtio1G\">pic.twitter.com/g8aMZtio1G</a></p>&mdash; Human on a Chip (@mecanosaurio) <a href=\"https://twitter.com/mecanosaurio/status/621113642021359617\">July 15, 2015</a></blockquote><blockquote class=\"twitter-tweet\" lang=\"en\"><p lang=\"en\" dir=\"ltr\">CONSUME ; art by Hal Hefner <a href=\"http://t.co/8kjBEYS3Gh\">pic.twitter.com/8kjBEYS3Gh</a></p>&mdash; Best Trippy Art (@strictlyTRIPPPY) <a href=\"https://twitter.com/strictlyTRIPPPY/status/618924143048699904\">July 8, 2015</a></blockquote>");
-        //.text("<a href=\"http://twitter.com/SleepyKitty_/status/621150823314288640\"><div class=\"content\">@85_alan_85 the event is over in like two days so I would do the story if I were u. I'm close to getting that SR nozomi card tho</div></a>");
-        /*
-        .text("<img width=\"50\" height=\"50\" class=\"ProfileAvatar-image\" \
-        alt=\"Best Trippy Art\" src=\"https://pbs.twimg.com/profile_images/477007468828950528/u3VklJzV_400x400.jpeg\"> \
-        <p>If you use Facebook, please go LIKE our page to see different posts and share with your Fb friends! http://on.fb.me/1IZcvnT #art</p> \
-        <img width=\"50\" height=\"50\" class=\"ProfileAvatar-image\" \
-        alt=\"Human on a Chip\" src=\"https://pbs.twimg.com/profile_images/614280012145934338/JdXcP--W_400x400.jpg\"> \
-        <p>restricting <b>oneself</b> to a personal arrangement of words <i>is</i> mere convention!</p> \
-        <img width=\"50\" height=\"50\" class=\"ProfileAvatar-image \" \
-        alt=\"katie rose\" src=\"https://pbs.twimg.com/profile_images/522519044251869185/VCQZz_O3_400x400.jpeg\"> \
-        <p class=\"TweetTextSize TweetTextSize--26px js-tweet-text tweet-text\" lang=\"en\" data-aria-label-part=\"0\">hello, i released a chapbook of generated poetry~ [[pdf | book]] [[ >"); 
-        */
-        //.text("<p class=\"TweetTextSize TweetTextSize--26px js-tweet-text tweet-text\" lang=\"en\" data-aria-label-part=\"0\"> hello, i released a chapbook of generated poetry~ [[pdf | book]] [[ <a class=\"twitter-timeline-link\" title=\"http://katierose.itch.io/picking-figs\" target=\"_blank\" data-expanded-url=\"http://katierose.itch.io/picking-figs\" dir=\"ltr\" rel=\"nofollow\" href=\"http://t.co/lmjsFb3pv8\"> <span class=\"tco-ellipsis\"></span> <span class=\"invisible\">http://</span> <span class=\"js-display-url\">katierose.itch.io/picking-figs</span> <span class=\"invisible\"></span> <span class=\"tco-ellipsis\"> <span class=\"invisible\"> </span> </span> </a> | <a class=\"twitter-timeline-link\" title=\"https://www.etsy.com/listing/236975716/picking-figs-in-the-garden-while-my\" target=\"_blank\" data-expanded-url=\"https://www.etsy.com/listing/236975716/picking-figs-in-the-garden-while-my\" dir=\"ltr\" rel=\"nofollow\" href=\"https://t.co/6L9APxlmAO\"> <span class=\"tco-ellipsis\"></span> <span class=\"invisible\">https://www.</span> <span class=\"js-display-url\">etsy.com/listing/236975</span> <span class=\"invisible\">716/picking-figs-in-the-garden-while-my</span> <span class=\"tco-ellipsis\"> <span class=\"invisible\"> </span> … </span> </a> ]] <a class=\"twitter-timeline-link u-hidden\" dir=\"ltr\" data-pre-embedded=\"true\" href=\"http://t.co/MlBJlBStdd\">pic.twitter.com/MlBJlBStdd</a> </p>");
     
     //$('circle').animate().toggle().toggle();
     $('circle').each(function() {
