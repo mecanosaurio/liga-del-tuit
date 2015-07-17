@@ -411,3 +411,24 @@ gray3: #8C8C8B;
     font-size:11px;
     opacity: 0.8;
 }
+
+
+.spantitle{
+	font-family: 'coolvetrica', helvetica;
+    color: #FFFFFF;
+    font-color: #FFFFFF;
+    font-padding: 2;
+    font-size:24px;
+    opacity: 0.8;
+    text-align: left;
+}
+
+.spancount{
+	font-family: 'coolvetrica', helvetica;
+    color: #FFFFFF;
+    font-color: #FFFFFF;
+    font-padding: 2;
+    font-size:12px;
+    opacity: 0.8;
+    text-align: right;
+}
