@@ -377,7 +377,6 @@ gray3: #8C8C8B;
 /** -------------qtip -----------------*/
 .qtip-mx{
     border-color: #8c8c8b;
-    opacity: 0.8;
     width: 300px;
 }
 .qtip-mx .qtip-content{
@@ -388,9 +387,9 @@ gray3: #8C8C8B;
 .qtip{
 	color: white;
 	padding: 8px;
+    opacity: 0.8;
     background-color: #2C2C2B;
-	opacity: 0.8;
-    border-radius: 16px;
+	border-radius: 16px;
 }
 
 .name{
@@ -400,6 +399,7 @@ gray3: #8C8C8B;
     font-color: #FFFFFF;
     font-padding: 6;
     font-size:2em;
+    float:center;
 }
 
 .twcontainer{
@@ -407,9 +407,9 @@ gray3: #8C8C8B;
     /*margin: 1em;*/
     color: #FFFFFFAA;
     font-color: #FFFFFF;
-    font-padding: 2;
+    font-padding: 2px;
     font-size:13px;
-    opacity: 0.8;
+    /*opacity: 0.9;*/
 }
 
 

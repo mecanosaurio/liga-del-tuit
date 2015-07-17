@@ -93,7 +93,7 @@ function drawBubbles(newcat){
             r: nr,
             opacity: 0.75
             }, {
-                duration: Math.random()*1800,
+                duration: Math.random()*2100,
                 step: function(now){
                         // others are cool and go throu this
                         $(this).attr('r', now);
@@ -106,7 +106,7 @@ function drawBubbles(newcat){
     //anima el aumento de opacidad del texto
     $('text').animate({
             opacity: 1,
-    }, Math.random()*2000);
+    }, Math.random()*2300);
 
     // then create the ubertooltips
     $("circle").each(function(){
@@ -118,7 +118,8 @@ function drawBubbles(newcat){
                 text: $(this).siblings('div').text()
             },
             style: {
-                classes: 'qtip-dark qtip-rounded qtip-shadow qtip-mx',
+                classes: 'qtip-rounded qtip-shadow qtip-mx',
+                opacity: 0.8
             },
             position: {
                 my: 'center left',  // Position my top left...
