@@ -376,8 +376,7 @@ gray3: #8C8C8B;
 
 /** -------------qtip -----------------*/
 .qtip-mx{
-    border-color: #FFFFFF;
-    background-color: #000000;
+    border-color: #8c8c8b;
     opacity: 0.8;
     width: 300px;
 }
@@ -389,7 +388,7 @@ gray3: #8C8C8B;
 .qtip{
 	color: white;
 	padding: 8px;
-    background-color: #8C8C8B;
+    background-color: #2C2C2B;
 	opacity: 0.8;
     border-radius: 16px;
 }
@@ -400,7 +399,7 @@ gray3: #8C8C8B;
     color: #FFF6EA;
     font-color: #FFFFFF;
     font-padding: 6;
-    font-size:26px;
+    font-size:2em;
 }
 
 .twcontainer{
@@ -418,17 +417,17 @@ gray3: #8C8C8B;
 	font-family: 'SF Movie Poster', helvetica;
     color: #D3D3D2;
     font-color: #D3D3D2;
-    font-size:2em;
+    font-size:2.2em;
     float: left;
     font-padding: 2;
 }
 
 .spancount{
-	font-family: 'SF Movie', helvetica;
+	font-family: 'SF Movie Poster', helvetica;
     color: #FFD7C0;
     font-color: #FFD7C0;
     font-padding: 2;
-    font-size:2em;
+    font-size:1.7em;
     float: right;
     font-style: normal;
 }
