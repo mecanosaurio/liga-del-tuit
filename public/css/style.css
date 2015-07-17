@@ -416,8 +416,8 @@ gray3: #8C8C8B;
 
 .spantitle{
 	font-family: 'SF Movie Poster', helvetica;
-    color: #FFFFFF;
-    font-color: #FFFFFF;
+    color: #D3D3D2;
+    font-color: #D3D3D2;
     font-padding: 2;
     font-size:20px;
     float: left;
@@ -426,8 +426,8 @@ gray3: #8C8C8B;
 
 .spancount{
 	font-family: 'SF Movie Poster', helvetica;
-    color: #FFFFFF;
-    font-color: #FFFFFF;
+    color: #FFD7C0;
+    font-color: #FFD7C0;
     font-padding: 2;
     font-size:14px;
     float: right;
@@ -438,6 +438,6 @@ gray3: #8C8C8B;
 	font-family: 'SF Movie Poster', helvetica;
     color: #FFFFFF;
     font-color: #FFFFFF;
-    font-size:24px;
+    font-size:2em;
     float: center;
 }
