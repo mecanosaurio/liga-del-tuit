@@ -112,7 +112,9 @@ function drawBubbles(newcat){
     $("circle").each(function(){
         $(this).qtip({
             show: 'click',
+            show: {delay: 100},
             hide:'unfocus',
+            hide: {delay: 100},
             title: 'catname',
             content:{
                 text: $(this).siblings('div').text()

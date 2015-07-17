@@ -61,15 +61,15 @@ h2 {
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 p, footer {
-	margin: 1em 0 .5em;
+	/*margin: 1em 0 .5em;*/
 	color: silver;
 }
 footer {
+	height: 200px;
 	background-color: #FFFFFF;
 	font-family: 'coolvetica', helvetica;
 	font-size: 1.2em;
 	margin-top: 3em; /*[3em]*/
-	text-align: center;
 	vertical-align: center;
 }
 
@@ -438,4 +438,12 @@ gray3: #8C8C8B;
     color: #FFFFFF;
     font-color: #FFFFFF;
     float: center;
+}
+
+.foot1{
+	text-align: left;
+}
+
+.foot2{
+	text-align: right;
 }
