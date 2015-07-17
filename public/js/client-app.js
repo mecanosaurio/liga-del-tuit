@@ -91,7 +91,7 @@ function drawBubbles(newcat){
         var nr = $(this).attr('value');
         $(this).animate({
             r: nr,
-            opacity: 0.75
+            opacity: 0.80
             }, {
                 duration: Math.random()*2100,
                 step: function(now){
