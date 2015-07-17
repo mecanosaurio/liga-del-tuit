@@ -68,8 +68,8 @@ footer {
 	height: 150px;
 	background-color: #FFFFFF;
 	font-family: 'coolvetica', helvetica;
-	font-size: 1.0em;
-	margin-top: 3em; /*[3em]*/
+	font-size: 0.8em;
+	margin-top: -1cm; /*[3em]*/
 	vertical-align: center;
 }
 
@@ -449,4 +449,6 @@ gray3: #8C8C8B;
 .foot2{
 	text-align: right;
 	right: .5cm;
+	font-size: 1.2em;
+	bottom:0.2cm;
 }
