@@ -30,7 +30,7 @@ gray3: #8C8C8B;
 
 /* ------ ------ main sections and styles ------ ------ */
 body {
-    font-family: 'SF Movie', sans-serif;
+    font-family: 'SF Movie', helvetica;
     /*margin: 1em;*/
     background: #FFF6EA;
     color: #FFF6EA;
@@ -50,7 +50,7 @@ h1, h2, h3 {
 h1 {
 	font-size: 8em;
 	line-height: 1.0em;
-	font-family: 'SF Movie Poster', sans-serif;
+	font-family: 'SF Movie Poster', helvetica;
 	font-style: bold;
 	text-shadow: 2px 4px 0 rgba(0,0,0,0.4);
 }
@@ -107,7 +107,7 @@ legend {
 
 
 input[type=button],  select {
-	font-family: 'SF Movie Poster', sans-serif;
+	font-family: 'SF Movie Poster', helvetica;
 	margin-top: 2.5em;
 	background: #D0D0D0;
 	border: 0 none;
@@ -151,7 +151,7 @@ text .menc1c {
 	width: 100%;
 	text-align: center;
 	float: center;
-	font-family: 'SF Movie Poster', sans-serif;
+	font-family: 'SF Movie Poster', helvetica;
 	font-style: bold;
 	color: #FFFFFF;
 	top: 2cm;
@@ -161,7 +161,7 @@ text .menc1c {
 .selectable{
     font-size:2.4em;
     color: #8C8C8B;
-	font-family: 'SF Movie Poster', sans-serif;
+	font-family: 'SF Movie Poster', helvetica;
 	font-style: bold;
 	font-padding: 2px;
 	/*text-shadow: 1px 1px 0 rgba(0,0,0,0.4);*/
@@ -170,13 +170,13 @@ text .menc1c {
 .othertext{
 	color: #58595B;
     font-size: 2em;
-	font-family: 'SF Movie Poster', sans-serif;
+	font-family: 'SF Movie Poster', helvetica;
 	}
 
 .bigbutts {
 	font-size: 8em;
 	color: #58595B;
-	font-family: 'SF Movie Poster', sans-serif;
+	font-family: 'SF Movie Poster', helvetica;
 	font-style: bold;
 	float: block;
 	/*text-shadow: 2px 4px 0 rgba(0,0,0,0.4);*/
@@ -352,7 +352,7 @@ gray3: #8C8C8B;
     width: 160px;
     height: 120px;
     font-family: 'coolvetica', helvetica;
-	/*font-family: 'SF Movie Poster', sans-serif;*/
+	/*font-family: 'SF Movie Poster', helvetica;*/
 	font-style: bold;
     font-size: 0.7em;
     opacity:1;
@@ -365,7 +365,7 @@ gray3: #8C8C8B;
     position: relative;
     width: 160px;
     height: 120px;
-	/*font-family: 'SF Movie Poster', sans-serif;*/
+	/*font-family: 'SF Movie Poster', helvetica;*/
     font-family: 'coolvetica', helvetica;
     font-size: 0.7em;
     opacity:1;
@@ -395,7 +395,7 @@ gray3: #8C8C8B;
 }
 
 .name{
-	font-family: 'SF Movie Poster', sans-serif;
+	font-family: 'SF Movie Poster', helvetica;
     /*margin: 1em;*/
     color: #FFF6EA;
     font-color: #FFFFFF;
@@ -418,16 +418,17 @@ gray3: #8C8C8B;
 	font-family: 'SF Movie Poster', helvetica;
     color: #D3D3D2;
     font-color: #D3D3D2;
-    font-size:2.2em;
+    font-size:2em;
     float: left;
+    font-padding: 2;
 }
 
 .spancount{
-	font-family: 'SF Movie Poster', helvetica;
+	font-family: 'SF Movie', helvetica;
     color: #FFD7C0;
     font-color: #FFD7C0;
     font-padding: 2;
-    font-size:1.8em;
+    font-size:2em;
     float: right;
     font-style: normal;
 }
