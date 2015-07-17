@@ -65,6 +65,7 @@ p, footer {
 	color: silver;
 }
 footer {
+	background-color: #FFFFFF;
 	font-family: 'coolvetica', helvetica;
 	font-size: 1.2em;
 	margin-top: 3em; /*[3em]*/
