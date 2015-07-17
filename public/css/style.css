@@ -65,10 +65,10 @@ p, footer {
 	color: silver;
 }
 footer {
-	height: 200px;
+	height: 150px;
 	background-color: #FFFFFF;
 	font-family: 'coolvetica', helvetica;
-	font-size: 1.2em;
+	font-size: 1.0em;
 	margin-top: 3em; /*[3em]*/
 	vertical-align: center;
 }
