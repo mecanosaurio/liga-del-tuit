@@ -77,8 +77,9 @@ footer {
 #colorstrip {
     overflow: hidden;
     position: relative;
-    height: 5px;
+    height: 2px;
     width: 100%;
+    align: center;
     }
 
 
@@ -329,16 +330,16 @@ gray3: #8C8C8B;
 	}
 
 #navBtn-c{	
-	font-size: 1.5em;
+	font-size: 1em;
 	background-color: #B6B7B5;
 	font-color: #FFFFFF;
-	height: 70px;
-	width: 70px;
+	height: 40px;
+	width: 40px;
 	position: relative;
 	text-align: left;
-	padding-left: 20px;
-	padding-top: 15px;
-	right: -120px;
+	padding-left: 10px;
+	padding-top: 10px;
+	right: -150px;
 	opacity: 0.75;
 	border-radius: 15px;
 	}
@@ -442,8 +443,10 @@ gray3: #8C8C8B;
 
 .foot1{
 	text-align: left;
+	left: 0.5cm;
 }
 
 .foot2{
 	text-align: right;
+	right: .5cm;
 }

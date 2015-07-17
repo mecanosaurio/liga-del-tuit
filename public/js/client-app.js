@@ -179,13 +179,14 @@ var main = function (){
 
     // draw the colorstrip below nav
     $('#colorstrip').colorstrip({
-        minInterval: 3000,
+        minInterval: 300,
         maxInterval: 15000,
         minWidth: 20,
-        maxWidth: 70,
+        maxWidth: 80,
         opacity: 0.4,
         //colors: ['#f90', '#39c', '#c00', '#090', '#c3f', '#007', '#69f']
-        colors: ['#FFD7C0', '#FFA67B', '#FF6446', '#D3D3D2', '#FFD7C0', '#FFA67B', '#FF6446']
+        //colors: ['#FFD7C0', '#FFA67B', '#FF6446', '#D3D3D2', '#8C8C8B' ,'#B6B7B5']
+        colors: ['#FF6446', '#D3D3D2', '#8C8C8B', '#FFA67B', '#FF6446']
     });
 
     // click on nav event handler
@@ -254,8 +255,8 @@ var main = function (){
             $('#navBtn-c').animate({right: 40}, 500);
             $('#navBtn-c').animate({width: 230}, 500);
         } else {
-            $('#navBtn-c').animate({width: 70}, 500);
-            $('#navBtn-c').animate({right: -120}, 500);
+            $('#navBtn-c').animate({width: 40}, 500);
+            $('#navBtn-c').animate({right: -150}, 500);
         }
         state3 = !state3;  
     });
