@@ -5,7 +5,7 @@
     });
 */
 var diameter = 650;
-var newcat = "all";
+var newcat = "mx140-opinion";
 var state1 = true;
 var state2 = true;
 var state3 = true;
