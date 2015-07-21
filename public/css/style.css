@@ -382,7 +382,7 @@ gray3: #8C8C8B;
     width: 300px;
     background-color: #B6B7B5;;
     border-color: #FFFFFF;
-    opacity: 0.8;
+    opacity: 0.9;
     
 }
 .qtip-mx .qtip-content{
@@ -390,13 +390,13 @@ gray3: #8C8C8B;
     font-size: 12px;
     font-color: #000000;
     background-color: #B6B7B5;;
-    opacity: 0.8;
+    opacity: 0.9;
 
 }
 
 .qtip{
 	padding: 8px;
-    opacity: 0.8;
+    opacity: 0.9;
     background-color: #B6B7B5;;
     border-radius: 16px;
 }
@@ -417,7 +417,7 @@ gray3: #8C8C8B;
     font-color: #000000;
     font-padding: 2px;
     font-size:13px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 
@@ -478,6 +478,7 @@ gray3: #8C8C8B;
     box-shadow: 0 8px 6px -6px black;
     text-align: center;
     display: none;
+    opacity: 0.9;
 }
 .modaltitle {
     padding: 10px 20px 15px 20px;
