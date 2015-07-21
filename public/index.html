@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 
-<!-- -- -- -- HEAD SECTION -- -- -- -->
+<!-- +++++ +++++ ++ HEAD SECTION ++ +++++ +++++ ++ -->
 <head>
 	<!-- metadata -->
 	<meta charset="utf-8">
@@ -23,12 +23,12 @@
 
 
 
-<!-- -- -- -- BODY SECTION -- -- -- -->
+<!-- +++++ +++++ ++ BODY SECTION ++ +++++ +++++ ++ -->
 <body>
-	<header>
+	<!--  .. .. ... .. header SECT .. .. ... .. -->
+	<header> 
     	<div class="row">
-      		<div class="col-md-1" style="position:relative; top:1.9cm; left:0.3cm;">
-      		</div>
+      		<div class="col-md-1" style="position:relative; top:1.9cm; left:0.3cm;"></div>
 
       		<div class="col-md-8" style="position:relative; top:1.9cm; left:0.3cm;">
       			<a class="bigbutts">#MÉXICOen140</a>
@@ -41,7 +41,9 @@
 
       	</div>
 	</header>
+
 	
+	<!-- .. .. ... .. nav bar SECT .. .. ... .. -->
 	<div class="row">
     	<div class="col-md-1" style="position:relative; top:1.9cm; left:0.3cm;">
       		</div>
@@ -61,25 +63,25 @@
       		</ul>
     	</nav>
     </div>
+
+
+    <!-- .. .. ... .. colorstrip SECT .. .. ... .. -->
     <div id="colorstrip" align="center"></div>
 	
 
-
+    <!-- .. .. ... .. chart SECT .. .. ... .. -->
 	<div class="row" style="margin-top:1cm;">
-	<div class="col-md-2" style="position:relative; vertical-align: middle;"></div>
-    <div class="col-md-6">
-	<!--fieldset-->
-
-		<section id="chart">
-			<svg width="750" height="650" margin-top="200">
-			</svg>
-		</section>
-		
-	<!--/fieldset-->
-	</div>
+		<div class="col-md-2" style="position:relative; vertical-align: middle;"></div>
+    	<div class="col-md-6">
+		<!--fieldset-->
+			<section id="chart">
+				<svg width="750" height="650" margin-top="200"></svg>
+			</section>
+		<!--/fieldset-->
+		</div>
 	
-	<div class="col-md-3" style="position:relative; top:0.5cm; left:0.5cm; font-size:1.5em;">
-	<!--fieldset-->
+		<div class="col-md-3" style="position:relative; top:0.5cm; left:0.5cm; font-size:1.5em;">
+		<!--fieldset-->
 
 		<!--legend-->
 			<a href="#"><br> </a>
@@ -120,16 +122,14 @@
 				y descubre qué es lo más mencionado
 				por cada grupo de usuarios. (<a href="#">!!!</a>)
   			</p>
-
-
-		<!--/legend-->
+			<!--/legend-->
 		
-	<!--/fieldset-->
-	</div>
+		<!--/fieldset-->
+		</div>
 	</div>
 
 	
-
+    <!-- .. .. ... .. footer SECT .. .. ... .. -->
 	<footer>
 		<hr width="90%" size="4">
 		<div class="row">
@@ -156,6 +156,7 @@
   	</footer>
 
 
+    <!-- .. .. ... .. hide SECT .. .. ... .. -->
   	<div id="modal" class="modal-demo" style="display: none; width: 600px;">
 		<button class="modalclose" onclick="Custombox.close();" type="button">
 			<span>×</span>
@@ -165,6 +166,8 @@
 		</div>
 	</div>
 
+
+    <!-- .. .. ... .. scripts callings .. .. ... .. -->
 	<script type="text/javascript" src="js/containers.js"></script>
 	<script type="text/javascript" src="js/data.js"></script>
 	<script src="js/jquery.min.js"></script>
@@ -173,12 +176,13 @@
     <script type="text/javascript" src="js/jquery.qtip.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
 	<script type="text/javascript" src="js/d3.min.js"></script>
 	<script type="text/javascript" src="js/custombox.min.js"></script>
 	<script type="text/javascript" src='js/colorstrip.js'></script>
 	<script type="text/javascript" src="js/client-app.js"></script>
-	<!--script type="text/javascript" src="data/pack.json"></script-->
 
- </body>
+
+
+<!--end-->
+</body>
 </html>
