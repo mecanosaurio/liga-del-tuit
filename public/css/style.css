@@ -469,6 +469,8 @@ gray3: #8C8C8B;
 }
 
 .modal-demo {
+    font-style: 'coolvetica', helvetica;
+    color: #FFF;
     background-color: #B6B7B5;
     width: 600px;
     border: #FFF solid 4px;
@@ -490,5 +492,6 @@ gray3: #8C8C8B;
 }
 .modalclose {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 5px;
+    right: 5px;
+}
