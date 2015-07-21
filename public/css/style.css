@@ -459,6 +459,36 @@ gray3: #8C8C8B;
 	bottom:0.2cm;
 }
 
-.logoethos{
-	
+.demo-content > h4 {
+    margin-top: 25px;
 }
+
+#modal {
+    font-style: 'coolvetica', helvetica;
+	font-color: #FFF;
+}
+
+.modal-demo {
+    background-color: #B6B7B5;
+    width: 600px;
+    border: #FFF solid 4px;
+    border-radius: 10px;
+    box-shadow: 0 8px 6px -6px black;
+    text-align: center;
+    display: none;
+}
+.modaltitle {
+    padding: 10px 20px 15px 20px;
+    line-height: 18px;
+    font-size: 18px;
+    border-bottom: #CCC solid 1px;
+}
+.modaltext {
+    font-style: 'coolvetica', helvetica;
+    font-color: #FFF;
+    padding: 0 20px 20px 20px;
+}
+.modalclose {
+    position: absolute;
+    top: 15px;
+    right: 15px;

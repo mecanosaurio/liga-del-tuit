@@ -260,6 +260,15 @@ var main = function (){
         }
         state3 = !state3;  
     });
+
+
+    $('.logoethos').on('click', function ( e ) {
+        Custombox.open({
+            target: '#modal',
+            effect: 'slide'
+        });
+        e.preventDefault();
+    });
 }
 
 
