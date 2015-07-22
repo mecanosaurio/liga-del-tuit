@@ -157,12 +157,12 @@ circle, .other {
 	font-size: 1.5em;
 	background-color: #FF6446;
 	color: #FFFFFF;
-	height: 140px;
-	width: 70px;
+	height: 120px;
+	width: 55px;
 	position: relative;
 	text-align: left;
-	padding-left: 20px;
-	padding-top: 55px;
+	padding-left: 12px;
+	padding-top: 45px;
 	right: -120px;
 	opacity: 0.75;
 	border-radius: 15px;
@@ -173,12 +173,12 @@ circle, .other {
 	font-size: 1.5em;
 	background-color: #FFA67B;
 	font-color: #FFFFFF;
-	height: 140px;
-	width: 70px;
+	height: 120px;
+	width: 55px;
 	position: relative;
 	text-align: left;
-	padding-left: 20px;
-	padding-top: 55px;
+	padding-left: 12px;
+	padding-top: 45px;
 	right: -120px;
 	opacity: 0.75;
 	border-radius: 15px;
@@ -194,7 +194,7 @@ circle, .other {
 	text-align: left;
 	padding-left: 10px;
 	padding-top: 10px;
-	right: -150px;
+	right: -135px;
 	opacity: 0.75;
 	border-radius: 15px;
 	}

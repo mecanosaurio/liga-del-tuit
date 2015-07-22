@@ -212,7 +212,7 @@ var main = function (){
 
         } else {
             $( "#panela" ).animate({opacity: 0}, 20);
-            $('#navBtn-a').animate({width: 70}, 100);
+            $('#navBtn-a').animate({width: 60}, 100);
             $('#navBtn-a').animate({right: -120}, 100);
             $("#panela" ).position({
                 my: "left-30",
@@ -238,7 +238,7 @@ var main = function (){
 
         } else {
             $( "#panelb" ).animate({opacity: 0}, 20);
-            $('#navBtn-b').animate({width: 70}, 100);
+            $('#navBtn-b').animate({width: 60}, 100);
             $('#navBtn-b').animate({right: -120}, 100);
             $("#panelb" ).position({
                 my: "left-30",
@@ -256,7 +256,7 @@ var main = function (){
             $('#navBtn-c').animate({width: 230}, 100);
         } else {
             $('#navBtn-c').animate({width: 40}, 100);
-            $('#navBtn-c').animate({right: -150}, 100);
+            $('#navBtn-c').animate({right: -140}, 100);
         }
         state3 = !state3;  
     });
