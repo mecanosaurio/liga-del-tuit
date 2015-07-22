@@ -26,188 +26,176 @@
 <!-- +++++ +++++ ++ BODY SECTION ++ +++++ +++++ ++ -->
 <body>
 	
-	<div class="header"> 
     <!--  .. .. ... .. header SECT .. .. ... .. -->
-		<div class="row">
-    		<!-- 1st column empty-->
-      		<div class="col-md-1"></div>
-    		<!-- 2nd column title-->
-      		<div class="col-md-8" >
-				<table style="width:100%; position:relative; top:0.2cm; left:0.3cm;" >
-  					<tr style="float: left">
-  						<td>
-  							<a class="titular">#MÉXICOen140 </a>
+	<div class="row header">
+    	<!-- 1st column empty-->
+    	<div class="col-md-1"></div>
+    	<!-- 2nd column title-->
+     		<div class="col-md-8" >
+			<table style="width:100%; position:relative; top:0.2cm; left:0.3cm;" >
+  				<tr style="float: left">
+  					<td>
+  						<a class="titular">#MÉXICOen140 </a>
   						</td>
-  						<td>
-  							<img src="data/logo_mx140.png" 
-  								class = "logo-mx" alt="logo-mx140" 
-  								height="80" width="95" 
-  								style="position:relative; bottom:0.3cm; left: 0.1cm;">
-  						</td>
-					</tr>
-				</table>
-      		</div>
-    		<!-- 3rd column corner logo-->			
-      		<div class="col-md-3" style="position:relative; top:0.5cm; ">
-      			<table style="width:100%" >
-  					<tr><td>
-  						<a href="#">
-						<img src="data/logo_ethos.png" 
-    						class="logo-ethos" alt="logo ethos" 
-    						width="120" height="180"
-    						style="position:relative; left:-1cm;">
-    					</a>
-    				</td></tr>
-				</table>
-      		</div>    	
+  					<td>
+  						<img src="data/logo_mx140.png" 
+  							class = "logo-mx" alt="logo-mx140" 
+  							height="80" width="95" 
+  							style="position:relative; bottom:0.3cm; left: 0.1cm;">
+  					</td>
+				</tr>
+			</table>
+    	</div>
+    	<!-- 3rd column corner logo-->			
+    	<div class="col-md-3" style="position:relative; top:0.5cm; ">
+    		<table style="width:100%" >
+  				<tr><td>
+  					<a href="#">
+					<img src="data/logo_ethos.png" 
+    					class="logo-ethos" alt="logo ethos" 
+    					width="120" height="180"
+    					style="position:relative; left:-1cm;">
+    				</a>
+    			</td></tr>
+			</table>
+    	</div>    	
 
-      	</div>
-	</div>
+    </div>
 
 
+	<!-- .. .. ... .. nav bar SECT .. .. ... .. -->		
+	<div class="row navigation-bar">
+		<!-- 1st column empty-->
+    	<div class="col-md-1"></div>
+   		<!-- 2nd column nav bar-->
+    	<div class="col-md-8">
+    		<nav style="position:relative; bottom:1cm; left:0.3cm; height:10px;">
+				<a class = "selec active" value="all" href="#">TODOS</a> | | | |
+				<a class = "selec" value="mx140-ejecutivo" href="#">Poder EJECUTIVO</a> | | | |
+				<a class = "selec" value="mx140-diputados" href="#">DIPUTADOS</a> | | | |
+				<a class = "selec" value="mx140-senadores" href="#">SENADORES</a> | | | |
+				<a class = "selec" value="mx140-gobernadores" href="#">GOBERNADORES</a> | | | |
+				<a class = "selec" value="mx140-opinion"href="#">LÍDERES de OPINIÓN</a> | | | |
+				<a class = "selec" value="mx140-pri" href="#">PRI</a> | | | |
+				<a class = "selec" value="mx140-pan" href="#">PAN</a> | | | |
+				<a class = "selec" value="mx140-prd" href="#">PRD</a> | | | |
+			</nav>
+    	</div>
+    </div>
+	<!-- .. .. ... .. colorstrip ROW .. .. ... .. -->
+	<div class="row">
+   		<!-- just one column-->
+    	<div class="col-md-11" align="center" style="bottom:0.2cm;">
+   		    <div id="colorstrip" align="center"></div>
+    	</div>
+    </div>
 	
-	<div class="navigation-bar">
-		<!-- .. .. ... .. nav bar SECT .. .. ... .. -->
-		<div class="row">
-   			<!-- 1st column empty-->
-    		<div class="col-md-1"></div>
-   			<!-- 2nd column nav bar-->
-    		<div class="col-md-8">
-    			<nav style="position:relative; bottom:1cm; left:0.3cm; height:10px;">
-					<a class = "selec active" value="all" href="#">TODOS</a> | | | |
-					<a class = "selec" value="mx140-ejecutivo" href="#">Poder EJECUTIVO</a> | | | |
-					<a class = "selec" value="mx140-diputados" href="#">DIPUTADOS</a> | | | |
-					<a class = "selec" value="mx140-senadores" href="#">SENADORES</a> | | | |
-					<a class = "selec" value="mx140-gobernadores" href="#">GOBERNADORES</a> | | | |
-					<a class = "selec" value="mx140-opinion"href="#">LÍDERES de OPINIÓN</a> | | | |
-					<a class = "selec" value="mx140-pri" href="#">PRI</a> | | | |
-					<a class = "selec" value="mx140-pan" href="#">PAN</a> | | | |
-					<a class = "selec" value="mx140-prd" href="#">PRD</a> | | | |
-				</nav>
-    		</div>
-    	</div>
-	    <!-- .. .. ... .. colorstrip ROW .. .. ... .. -->
-		<div class="row">
-   			<!-- just one column-->
-    		<div class="col-md-11" align="center" style="bottom:0.2cm;">
-   			    <div id="colorstrip" align="center"></div>
-    		</div>
-    	</div>
-	</div>
 
-
-
-	<div class="main-chart">
-	    <!-- .. .. ... .. MAIN chart SECTION .. .. ... .. -->
-		<div class="row">
-   			<!-- 1st column empty-->
-			<div class="col-md-2" style="position:relative; vertical-align: middle;"></div>
-    		<!-- 2nd column chart-->
-			<div class="col-md-6" style="position:relative; align: middle;  vertical-align: top;">
-			    <!-- .. .. ... .. chart SECT .. .. ... .. -->
-				<section id="chart">
-					<svg width="750" height="650"></svg>
-				</section>
-			</div>
-			<!-- 3rd column legend table-->
-			<div class="col-md-3" style="position:relative; top:0.5cm; left:0.5cm; font-size:1.5em;">
-				<!-- .. .. ... .. legend SECT .. .. ... .. -->
-				<section id="legend">
-				<table>
-  					<tr> <!--button-check-->
-  						<td>
-							<div id="infoblock-check" style="position:relative; top:20px;">
-    							<a href="#" id="icon-check">
-    							<span class="glyphicon glyphicon-info-sign" style="color:white"></span>
-    							</a>
-    						</div>
-						</td>
-					</tr>
-  					<tr> <!--button-info-->
-  						<td>
-							<div id="infoblock-info" style="position:relative; top:40px;">
-    							<a href="#" id="icon-info">
-    							<span class="glyphicon glyphicon-hand-up" style="color:white"></span>
-    							</a>
-  							</div>
-  						</td>
-					</tr>
-  					<tr>  <!--b-none-->
-  						<td>
-  							<div >
-  							<a> </a>
-  							</div>
-  						</td>
-					</tr>
-  					<tr>  <!--button-metod-->
-  						<td>
-							<div id="infoblock-metod" style="position:relative; top:320px;">
-    							<a href="#" id="icon-metod">
-    							<span class="glyphicon glyphicon-cog text-metod" style="color:white"></span>
-    							</a>
-    							<a href="#" id="text-metod">
-    							<span>METODOLOGíA</span>
-    							</a>
-	  						</div>
-	  					</td>
-					</tr>
-				</table>
-
-					<p id="text-check" style="opacity: 0;">
-						#MéXICOen140 es una herramienta que 
-						muestra qué están diciendo los 
-						tuiteros más influyentes del país.
-  					</p>
-					<p  id="text-info" style="opacity: 0;">
-						Haz click en las distintas categorías
-						y descubre qué es lo más mencionado
-						por cada grupo de usuarios. (<a href="#">...</a>)
-  					</p>
-					<!--p id="text-metod" style="opacity: 0;">
-						<a id="link-metod" href="#"> METODOLOGÍA </a>
-					</p-->
-  				</div>
-  			</section>>		
-			</div>
+    <!-- .. .. ... .. MAIN chart SECTION .. .. ... .. -->
+	<div class="row main-chart">
+   		<!-- 1st column empty-->
+		<div class="col-md-2" style="position:relative; vertical-align: middle;"></div>
+    	<!-- 2nd column chart-->
+		<div class="col-md-6" style="position:relative; align: middle;  vertical-align: top;">
+		    <!-- .. .. ... .. chart SECT .. .. ... .. -->
+			<section id="chart">
+				<svg width="750" height="650"></svg>
+			</section>
+		</div>
+		<!-- 3rd column legend table-->
+		<div class="col-md-3" style="position:relative; top:0.5cm; left:0.5cm; font-size:1.5em;">
+			<!-- .. .. ... .. legend SECT .. .. ... .. -->
+			<section id="legend">
+			<table>
+  				<tr> <!--button-check-->
+  					<td>
+						<div id="infoblock-check" style="position:relative; top:20px;">
+    						<a href="#" id="icon-check">
+    						<span class="glyphicon glyphicon-info-sign" style="color:white"></span>
+    						</a>
+    					</div>
+					</td>
+				</tr>
+  				<tr> <!--button-info-->
+  					<td>
+						<div id="infoblock-info" style="position:relative; top:40px;">
+    						<a href="#" id="icon-info">
+    						<span class="glyphicon glyphicon-hand-up" style="color:white"></span>
+    						</a>
+  						</div>
+  					</td>
+				</tr>
+  				<tr>  <!--b-none-->
+  					<td>
+  						<div >
+  						<a> </a>
+  						</div>
+  					</td>
+				</tr>
+  				<tr>  <!--button-metod-->
+  					<td>
+						<div id="infoblock-metod" style="position:relative; top:320px;">
+    						<a href="#" id="icon-metod">
+    						<span class="glyphicon glyphicon-cog text-metod" style="color:white"></span>
+    						</a>
+    						<a href="#" id="text-metod">
+    						<span>METODOLOGíA</span>
+    						</a>
+	 						</div>
+	 					</td>
+				</tr>
+			</table>
+			<p id="text-check" style="opacity: 0;">
+					#MéXICOen140 es una herramienta que 
+					muestra qué están diciendo los 
+					tuiteros más influyentes del país.
+ 			</p>
+			<p  id="text-info" style="opacity: 0;">
+					Haz click en las distintas categorías
+					y descubre qué es lo más mencionado
+					por cada grupo de usuarios. (<a href="#">...</a>)
+ 			</p>
+			<!--p id="text-metod" style="opacity: 0;">
+			<a id="link-metod" href="#"> METODOLOGÍA </a>
+			</p-->
 		</div>
 	</div>
-
 
 
 
 	
     <!-- .. .. ... .. footer SECT .. .. ... .. -->
-	<footer>
-		<hr width="90%" size="4">
-		<div class="row">
-			<div class="col-md-1" style="position:relative; vertical-align: middle;"></div>
-			<div class="col-md-5 foot1" style="position:relative; vertical-align: middle;">
-				<span>(C) 2015 Todos los derechos reservados. <br>
-				Este es un proyecto de Ethos Laboratorio de Políticas Públicas <br>
-				en colaboración con <a href="http://overdriven-labs.ml" target="_blank" style="font-color: silver; color: silver">( ⧉ ⦣ ⧉ )</a>.<br><br></span>
-			</div>
-			<div class="col-md-3" style="position:relative; vertical-align: middle;"></div>
-			<div class="col-md-2 foot2" style="position:relative; vertical-align: middle;">
-				<table style="width:100% text-align:right" >
-  					<tr style="float: right">
-  						<th><a href="https://www.facebook.com/ethoslaboratorio" target="_blank">
-  							<img src="data/facebook-g.png" alt="f" height="30" margin-right="10px">  
-  						</a></th>
-  						<th><a href="https://twitter.com/ethoslabmx" target="_blank"><img src="data/twitter-g.png" alt="t" width="30" height="30">
-  						</a></th>
-  					</tr>
-  					<tr>
-    					<th><a class="link-eth" href="http://www.ethos.org.mx" target="_blank">www.ethos.org.mx</a>
-    					</th>
-					</tr>
-				</table>
-			</div>
-			<div class="col-md-1" style="position:relative; vertical-align: middle;"></div>
+	<hr width="90%" size="4">
+	<div class="row footer">
+		<div class="col-md-1"></div>
+		<div class="col-md-5 foot1">
+			<span>(C) 2015 Todos los derechos reservados. <br>
+			Este es un proyecto de Ethos Laboratorio de Políticas Públicas <br>
+			en colaboración con <a href="http://overdriven-labs.ml" target="_blank" style="font-color: silver; color: silver">( ⧉ ⦣ ⧉ )</a>.<br><br></span>
 		</div>
-  	</footer>
+		<div class="col-md-3"></div>
+		<div class="col-md-2 foot2">
+			<table style="width:100% text-align:right" >
+				<tr style="float: right">
+					<th><a href="https://www.facebook.com/ethoslaboratorio" target="_blank">
+ 						<img src="data/facebook-g.png" alt="f" height="30" margin-right="10px">  
+  					</a></th>
+  					<th><a href="https://twitter.com/ethoslabmx" target="_blank"><img src="data/twitter-g.png" alt="t" width="30" height="30">
+  					</a></th>
+  				</tr>
+  				<tr>
+    				<th><a class="link-eth" href="http://www.ethos.org.mx" target="_blank">www.ethos.org.mx</a>
+    				</th>
+				</tr>
+			</table>
+		</div>
+		<div class="col-md-1" style="position:relative; vertical-align: middle;"></div>
+	</div>
+
 
 
     <!-- .. .. ... .. hide SECT .. .. ... .. -->
+	<div class="row" style="display: none;">
   	<div id="modal" class="modal-demo" style="display: none; width: 400px;">
 		<button class="modalclose" onclick="Custombox.close();" type="button">
 			<span>×</span>
@@ -227,6 +215,7 @@
 		<h4 class="modaltitle">METODOLOGíA</h4>
 		<div class="modaltext" > <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 		</div>
+	</div>
 	</div>
 
 

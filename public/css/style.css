@@ -265,23 +265,26 @@ h2 {
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-footer {
-	color: silver;
-	height: 100px;
+.footer {
+	/*top: -1.5cm;*/
 	background-color: #FFFFFF;
+	color: silver;
+	/*height: 100px;*/
 	font-family: 'coolvetica', helvetica;
 	font-size: 0.70em;
-	/*top: -1.1cm;*/
-	bottom: 1cm;
+	position: relative;
+	top: -1cm;
 	vertical-align: center;
 }
 
 .foot1{
+	position: relative;
 	text-align: left;
 	left: 0.5cm;
 }
 
 .foot2{
+	position: relative;
 	text-align: right;
 	right: .5cm;
 	bottom:0.2cm;
