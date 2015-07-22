@@ -30,22 +30,21 @@ gray3: #8C8C8B;
 
 /* ------ ------ header ------ ------ */
 .header {
-	margin-top: -70px;	
+	margin-top: -2cm;
 }
 
-.title-main {
-	font-size: 8em;
+.titular {
+	font-size: 8.5em;
 	color: #58595B;
 	font-family: 'SF Movie Poster', helvetica;
 	font-style: bold;
 	float: block;
 	/*text-shadow: 2px 4px 0 rgba(0,0,0,0.4);*/
 }
-.title-main:hover {
+.titular:hover {
     color: #A8A9AB;
     text-decoration: none;
 }
-
 
 .logo-mx {
 }
@@ -78,6 +77,13 @@ gray3: #8C8C8B;
     text-decoration: none;
 }
 
+#colorstrip {
+    overflow: hidden;
+    position: relative;
+    height: 2px;
+    width: 85%;
+    align: center;
+    }
 
 
 
@@ -120,15 +126,6 @@ footer {
 	margin-top: -1cm; /*[3em]*/
 	vertical-align: center;
 }
-
-
-#colorstrip {
-    overflow: hidden;
-    position: relative;
-    height: 2px;
-    width: 80%;
-    align: center;
-    }
 
 
 fieldset {
