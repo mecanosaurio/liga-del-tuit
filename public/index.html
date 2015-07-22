@@ -206,20 +206,51 @@
 		</div>
 	</div>
 
-	<div id="modal-metod" class="modal-demo" style="display: none; width: 600px;">
+	<div id="modal-metod" class="modal-demo" style="display: none;">
 		<button class="modalclose" onclick="Custombox.close();" type="button">
 			<span>×</span>
 		</button>
-		<h4 class="modaltitle">METODOLOGíA</h4>
 		<div class="modaltext" > 
-			<h3>METODOOGíA</h3>
+			<h2>METODOOGíA</h2>
 			<p>#Méxicoen140 surge con el objetivo de explorar una forma distinta de analizar
 				información que intercambian los principales líderes de opinión del país. Utilizando una herramienta de uso público (Twitter), se extraen y se proyectan las palabras con más menciones de una selección específica de cuentas. #Méxicoen140 permite al usuario descubrir a través de las palabras proyectadas, cuales son los temas de coyuntura en un determinado momento en México.</p>
-			<h4>Criterio para Selección de Cuentas</h4>
+			<h3>Criterio para Selección de Cuentas</h3>
 			<p>Para reunir a las voces má influyentes del país, se elaboró una base de datos con múltiples cuentas activas de twitter. Con el propósito de clasificar dichas cuentas se crearon 8 categorías: Poder Ejecutivo, Senadores, Diputados, Gobernadores, Líderes de Opinión, PAN, PRI y PRD. Cada categoría está integrada por distintos grupos de cuentas.</p>
 			<ul>
-				<ld><b>Poder ejecutivo:</b> incluye las cuentas institucionales de la presidencia, Presidente, miembros del gabinete presidencial, directores de instituciones de gobierno, gobernadores estatales y diversas dependencias del gobierno.</ld>
+				<li><b>Poder ejecutivo:</b> incluye las cuentas institucionales de la presidencia, Presidente, miembros del gabinete presidencial, directores de instituciones de gobierno, gobernadores estatales y diversas dependencias del gobierno.</li>
+				<li><b>Senadores:</b> Incluye la cuenta institucional de la Cámara de Senadores y las cuentas personales de aquellos senadores activos en Twitter.
+				</li>
+				<li><b>Diputados:</b> Incluye la cuenta institucional de la Cámara de Diputados y las cuentas personales de aquellos diputados activos en Twitter.
+				</li>
+				<li><b>Líderes de Opinión:</b> Incluye cuentas institucionales de medios de comunicación, organizaciones de la sociedad civil e instituciones académicas, así como las cuentas personales de empresarios, periodistas, líderes de ONGs y Think Tanks, académicos, intelectuales, entre otros personajes activos y destacados.
+				</li>
+				<li><b>Gobernadores:</b> Incluye la cuenta de cada uno de los Gobernadores de las 32 entidades federativas.
+				</li>
+				<li><b>PRI:</b> Cuentas insitucionales y de personajes destacados del Partido Revolucionario Institucional.
+				</li>
+				<li><b>PAN:</b> Cuentas insitucionales y de personajes destacados del Partido Acción Nacional.
+				</li>
+				<li><b>PRD:</b> Cuentas insitucionales y de personajes destacados del Partido de la Revolución Democrática.
+				</li>
+				<li><b>Todos:</b> Esta categoría incluye a todas las cuentas incluidas en las otras categorías.
+				</li>
 			</ul>
+			<p>Los criterios generales para seleccionar las cuentas fueron:</p>
+			<ol>
+				<li>Pertenencia a alguna de las categorías establecidas.</li>
+				<li>Contar con una cuenta de Twitter activa (se entiende por cuenta activa a aquellas cuentas que tienen seguidores, emiten tweets con regularidad y son generadores de conversación, debate y contenido relevante. No es necesario cumplir con todos los criterios para ser considerado activo, pero sí con la mayoría)</li>
+				<li>Relevancia e influencia en el quehacer político del país.</li>
+			</ol>
+			<p>La autenticidad de cada una de las cuentas seleccionadas fue verificada y confirmada previamente a su inclusión en esta aplicación.</p>
+
+			<h3>Sistema</h3>
+			<p><b>Versión 1.0</b></p>
+			<p>El sistema recopilaba y registraba constantemente los tuits generados por todas las cuentas incluidas en las distintas categorías.</p>
+			<p>Posteriormente procesaba el texto y agrupaba las palabras mencionadas con mayor frecuencia. Este grupo de palabras pasa por un filtro donde se descartaban palabras que no aportan información. Finalmente, las palabras se proyectaban en una visualización en la que el tamaño y colores de los círculos depende del número de menciones.</p>
+			<p>La aplicación se actualizaba de manera continua reflejando la información recién generada por las cuentas incluidas. Una vez a la semana el conteo de palabras era reiniciado.</p>
+			<p><b>Créditos: </b> José Luis Chicoma (Ethos), Alejandra Brambila(Ethos), Eduardo López (Desarrollo), Gerardo Galindez (Desarrollo), Miguel Salazar (Desarrollo), Ana Dávila (Base de Datos).</p>
+			<br><br>
+			<p>(c) 2015 Todos los derechos reservados.<br>Ethos Laboratorio de Políticas Públicas<br> (Avance-análisis estudios e investigación para el desarrollo A.C.)</p>
 		</div>
 	</div>
 

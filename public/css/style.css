@@ -407,20 +407,20 @@ footer {
 
 #modal {
     font-style: 'coolvetica', helvetica;
-	font-color: #FFF;
+	font-color: #B6B7B5;
 }
 
 .modal-demo {
     font-style: 'coolvetica', helvetica;
-    color: #FFF;
-    background-color: #B6B7B5;
+    color: #B6B7B5;
+    background-color: #E6E7E5;
     width: 600px;
-    border: #FFF solid 4px;
+    border: #B6B7B5 solid 4px;
     border-radius: 10px;
     box-shadow: 0 8px 6px -6px black;
-    text-align: center;
+    text-align: left;
     display: none;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 .modaltitle {
     padding: 10px 20px 15px 20px;
