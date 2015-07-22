@@ -240,7 +240,7 @@ var main = function (){
         }
     });
 
-    // slider button 3
+    /*// slider button 3
     $("#icon-metod").on({
         click: function () {
             $("#text-metod").show();
@@ -260,7 +260,7 @@ var main = function (){
             $('#infoblock-metod').animate({right: -135}, 200);
             $( "#text-metod" ).animate( {opacity: 0}, 300);
         }  
-    });
+    });*/
 
 
     $('.logo-ethos').on('click', function ( e ) {
