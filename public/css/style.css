@@ -78,7 +78,7 @@ footer {
     overflow: hidden;
     position: relative;
     height: 2px;
-    width: 100%;
+    width: 80%;
     align: center;
     }
 
@@ -160,14 +160,32 @@ text .menc1c {
 
 }
 
-.selectable{
+/*the navigation bar elements are selec*/
+.selec{
     font-size:2.4em;
-    color: #8C8C8B;
+    color: #4C4C4B;
 	font-family: 'SF Movie Poster', helvetica;
 	font-style: bold;
 	font-padding: 2px;
 	/*text-shadow: 1px 1px 0 rgba(0,0,0,0.4);*/
 }
+.selec:link {
+    color: #6C6C6B;
+    text-decoration: none;
+}
+.selec:visited {
+    color: #6C6C6B;
+    text-decoration: none;
+}
+.selec:hover {
+    color: #FF6446;
+    text-decoration: none;
+}
+.selec:active {
+    color: #FF6446;;
+    text-decoration: none;
+}
+
 
 .othertext{
 	color: #58595B;

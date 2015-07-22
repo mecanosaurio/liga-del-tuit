@@ -190,7 +190,7 @@ var main = function (){
     });
 
     // click on nav event handler
-    $(".nav li").on ('click', function(e){
+    $(".selec").on ('click', function(e){
         e.preventDefault();
         //$(this).tab('show');
         var categ = $(this).attr('value');
