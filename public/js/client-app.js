@@ -250,15 +250,16 @@ var main = function (){
     });
 
     // slider button 3
-    $("#toggle-slide-button-3").on('click', function () {
-        if (state3){
-            $('#navBtn-c').animate({right: 40}, 100);
-            $('#navBtn-c').animate({width: 230}, 100);
-        } else {
-            $('#navBtn-c').animate({width: 40}, 100);
-            $('#navBtn-c').animate({right: -140}, 100);
+    $("#toggle-slide-button-3").on({
+        click: function () {
+                $('#navBtn-c').animate({right: 40}, 100);
+                $('#navBtn-c').animate({width: 230}, 100);
+            },
+        mouseleave: function() {
+                $('#navBtn-c').animate({width: 40}, 100);
+                $('#navBtn-c').animate({right: -140}, 100);
+            }  
         }
-        state3 = !state3;  
     });
 
 
