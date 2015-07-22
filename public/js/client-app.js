@@ -262,7 +262,7 @@ var main = function (){
     });
 
 
-    $('.logoethos').on('click', function ( e ) {
+    $('.logo-ethos').on('click', function ( e ) {
         Custombox.open({
             target: '#modal',
             effect: 'slide'
