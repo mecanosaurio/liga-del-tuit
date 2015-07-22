@@ -270,6 +270,14 @@ var main = function (){
         });
         e.preventDefault();
     });
+
+    $('#text-metod').on('click', function ( e ) {
+        Custombox.open({
+            target: '#modal-metod',
+            effect: 'slide'
+        });
+        e.preventDefault();
+    });
 }
 
 

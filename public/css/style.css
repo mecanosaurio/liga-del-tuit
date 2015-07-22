@@ -19,7 +19,7 @@
 f
 
 /*
-orange1: #FFD7C0;
+orange1: #FFD3BC;
 orange2: #FFA67B;
 orange3: #FF6446;
 gray1: #D3D3D2;
@@ -122,7 +122,7 @@ circle, .other {
 }
 
 .burb2 {
-	fill: #FFD7C0; 
+	fill: #FFD3BC; 
 	font-size: 2.2em;
 }
 
@@ -154,7 +154,7 @@ circle, .other {
 
 /* legend panel */
 #infoblock-check{	
-	font-size: 1.5em;
+	font-size: 2em;
 	background-color: #FFA67B;
 	font-color: #FFFFFF;
 	height: 120px;
@@ -198,9 +198,6 @@ circle, .other {
 	border-radius: 15px;
 	}
 
-#navBtn:hover{
-   background-color:#FFA67B;
-}
 
 #text-check {
     width: 160px;
