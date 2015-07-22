@@ -161,23 +161,23 @@ circle, .other {
 	width: 55px;
 	position: relative;
 	text-align: left;
-	padding-left: 14px;
-	padding-top: 45px;
+	padding-left: 8px;
+	padding-top: 40px;
 	right: -120px;
 	opacity: 0.70;
 	border-radius: 15px;
 	}
 
 #infoblock-info{
-	font-size: 1.5em;
+	font-size: 2em;
 	background-color: #FF6446;
 	color: #FFFFFF;
 	height: 120px;
 	width: 55px;
 	position: relative;
 	text-align: left;
-	padding-left: 12px;
-	padding-top: 45px;
+	padding-left: 7px;
+	padding-top: 40px;
 	right: -120px;
 	opacity: 0.70;
 	border-radius: 15px;    
