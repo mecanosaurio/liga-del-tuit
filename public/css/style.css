@@ -95,43 +95,6 @@ gray3: #8C8C8B;
 	color: #FFFFFF;
 }
 
-/* sections and properties */
-
-fieldset {
-	border: 0;
-	z-index: 1;
-	margin: 0;
-	margin-top: 3.5em;
-}
-
-fieldset p {
-	position: absolute;
-	left: 1em;
-	opacity: 0.5;
-}
-
-fieldset p > span {
-	font-size: 3em;
-}
-
-legend {
-	width: 100%;
-	float: left;
-	margin-top: 1em;
-}
-
-legend > div {
-	width: 24px;
-	height: 24px;
-}
-
-legend > div::after {
-	content: attr(data-category);
-	display: inline-block;
-	margin-left: 30px;
-	line-height: 24px;
-	width: 250px;
-}
 
 /* ----- some properties of circles ------ */
 circle {

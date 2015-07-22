@@ -68,12 +68,12 @@
 	
 	<div class="navigation-bar">
 		<!-- .. .. ... .. nav bar SECT .. .. ... .. -->
-		<div class="row" height="10px">
+		<div class="row">
    			<!-- 1st column empty-->
     		<div class="col-md-1"></div>
    			<!-- 2nd column nav bar-->
     		<div class="col-md-8">
-    			<nav style="position:relative; bottom:1cm; left:0.3cm;">
+    			<nav style="position:relative; bottom:1cm; left:0.3cm; height:10px;">
 					<a class = "selec active" value="all" href="#">TODOS</a> | | | |
 					<a class = "selec" value="mx140-ejecutivo" href="#">Poder EJECUTIVO</a> | | | |
 					<a class = "selec" value="mx140-diputados" href="#">DIPUTADOS</a> | | | |
@@ -89,72 +89,65 @@
 	    <!-- .. .. ... .. colorstrip ROW .. .. ... .. -->
 		<div class="row">
    			<!-- just one column-->
-    		<div class="col-md-11" align="center" style="bottom:1.2cm;">
+    		<div class="col-md-11" align="center" style="bottom:0.2cm;">
    			    <div id="colorstrip" align="center"></div>
     		</div>
     	</div>
 	</div>
 
 
-	<div class="chartmain">
+	<div class="main-chart">
     <!-- .. .. ... .. chart SECT .. .. ... .. -->
 		<div class="row">
    			<!-- 1st column empty-->
 			<div class="col-md-2" style="position:relative; vertical-align: middle;"></div>
-    		<div class="col-md-6" style="position:relative; align: middle;  vertical-align: top;">
-		<!--fieldset-->
-			<section id="chart">
-				<svg width="750" height="650"></svg>
-			</section>
-		<!--/fieldset-->
-		</div>
-	
-		<div class="col-md-3" style="position:relative; top:0.5cm; left:0.5cm; font-size:1.5em;">
-
-
-		<!--legend-->
-			<a href="#"><br> </a>
-
-			<div id="navBtn-a" class='block'>
-    			<div>
-    				<a href="#" id="toggle-slide-button-1">
-    				<span class="glyphicon glyphicon-check" style="color:white"></span>
-    				</a>
-    			</div>
+    		<!-- 2nd column chart-->
+			<div class="col-md-6" style="position:relative; align: middle;  vertical-align: top;">
+				<section id="chart">
+					<svg width="750" height="650"></svg>
+				</section>
 			</div>
+			<!-- 3rd column legend-->
+			<div class="col-md-3" style="position:relative; top:0.5cm; left:0.5cm; font-size:1.5em;">
+			<!--legend-->
+				<a href="#"><br> </a>
+				<div id="navBtn-a" class='block'>
+    				<div>
+    					<a href="#" id="toggle-slide-button-1">
+    					<span class="glyphicon glyphicon-check" style="color:white"></span>
+    					</a>
+    				</div>
+				</div>
 
-			<a href="#"><br> </a>
-			
-			<div id="navBtn-b">
-    			<a href="#" id="toggle-slide-button-2">
+				<a href="#"><br> </a>			
+				<div id="navBtn-b">
+    				<a href="#" id="toggle-slide-button-2">
     				<span class="glyphicon glyphicon-hand-up" style="color:white"></span>
-    			</a>
-			</div>
+    				</a>
+				</div>
 
-			<a href="#"><br> </a>
-			<a href="#"><br> </a>
-			<a href="#"><br> </a>
+				<a href="#"><br> </a>
+				<a href="#"><br> </a>
+				<a href="#"><br> </a>
 
-			<div id="navBtn-c">
-    			<a href="#" id="toggle-slide-button-3">
+				<div id="navBtn-c">
+    				<a href="#" id="toggle-slide-button-3">
     				<span class="glyphicon glyphicon-cog" style="color:white"></span>
-    			</a>
-			</div>
+    				</a>
+				</div>
 
-			<p id="panela" style="opacity: 0">
-				#MéXICOen140 es una herramienta que 
-				muestra qué están diciendo los 
-				tuiteros más influyentes del país.
-  			</p> 
-			<p id="panelb" style="opacity: 0">
-				Haz click en las distintas categorías
-				y descubre qué es lo más mencionado
-				por cada grupo de usuarios. (<a href="#">!!!</a>)
-  			</p>
-			<!--/legend-->
-		
+				<p id="panela" style="opacity: 0">
+					#MéXICOen140 es una herramienta que 
+					muestra qué están diciendo los 
+					tuiteros más influyentes del país.
+  				</p> 
+				<p id="panelb" style="opacity: 0">
+					Haz click en las distintas categorías
+					y descubre qué es lo más mencionado
+					por cada grupo de usuarios. (<a href="#">!!!</a>)
+  				</p>		
+			</div>
 		</div>
-	</div>
 	</div>
 
 	
