@@ -199,66 +199,56 @@ var main = function (){
     });
  
     // slider button 1
-    $("#toggle-slide-button-1").on({
+    $("#icon-check").on({
         click: function () {
-            $('#navBtn-a').animate({right: 40}, 200);
-            $('#navBtn-a').animate({width: 230}, 200);
             $("#panela").show();
+            $('#infoblock-check').animate({right: 40}, 200);
+            $('#infoblock-check').animate({width: 230}, 200);
             $("#panela" ).position({
                 my: "center-50 top+2",
                 at: "center top",
-                of: "#navBtn-a"
+                of: "#infoblock-check"
             });
-            $( "#panela" ).animate( {opacity: 1}, 300);
+            $( "#panela" ).animate( {opacity: 1}, 500);
         },
         blur: function() {
             $("#panela").hide();
-            $('#navBtn-a').animate({width: 60}, 200);
-            $('#navBtn-a').animate({right: -120}, 200);
-            $("#panela" ).position({
-                my: "left-30",
-                at: "left",
-                of: "#navBtn-a"
-            });
-            $( "#panela" ).animate({opacity: 0}, 200);
+            $('#infoblock-check').animate({width: 55}, 200);
+            $('#infoblock-check').animate({right: -120}, 200);
+            $( "#panela" ).animate( {opacity: 0}, 300);
         }
     });
     
     // slider button 2
-    $("#toggle-slide-button-2").on({
+    $("#icon-info").on({
         click: function () {
-            $('#navBtn-b').animate({right: 40}, 200);
-            $('#navBtn-b').animate({width: 230}, 200);
             $("#panelb").show();
+            $('#infoblock-info').animate({right: 40}, 200);
+            $('#infoblock-info').animate({width: 230}, 200);
             $("#panelb" ).position({
                 my: "center-50 top+2",
                 at: "center top",
-                of: "#navBtn-b"
+                of: "#infoblock-info"
             });
-            $( "#panelb" ).animate( {opacity: 1}, 300);
+            $( "#panelb" ).animate( {opacity: 1}, 500);
         },
         blur: function() {
             $("#panelb").hide();
-            $('#navBtn-b').animate({width: 60}, 200);
-            $('#navBtn-b').animate({right: -120}, 200);
-            $("#panelb" ).position({
-                my: "left-30",
-                at: "left",
-                of: "#navBtn-b"
-            });
-            $( "#panelb" ).animate({opacity: 0}, 200);
+            $('#infoblock-info').animate({width: 55}, 200);
+            $('#infoblock-info').animate({right: -120}, 200);
+            $( "#panelb" ).animate( {opacity: 0}, 300);
         }
     });
 
     // slider button 3
-    $("#toggle-slide-button-3").on({
+    $("#icon-metod").on({
         click: function () {
-            $('#navBtn-c').animate({right: 40}, 200);
-            $('#navBtn-c').animate({width: 230}, 200);
+            $('#infoblock-metod').animate({right: 40}, 200);
+            $('#infoblock-metod').animate({width: 230}, 200);
         },
         blur: function() {
-            $('#navBtn-c').animate({width: 40}, 200);
-            $('#navBtn-c').animate({right: -140}, 200);
+            $('#infoblock-metod').animate({width: 40}, 200);
+            $('#infoblock-metod').animate({right: -140}, 200);
         }  
     });
 
