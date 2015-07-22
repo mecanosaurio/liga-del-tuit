@@ -201,54 +201,64 @@ var main = function (){
     // slider button 1
     $("#icon-check").on({
         click: function () {
-            $("#panela").show();
+            $("#text-check").show();
             $('#infoblock-check').animate({right: 40}, 200);
             $('#infoblock-check').animate({width: 230}, 200);
-            $("#panela" ).position({
+            $("#text-check" ).position({
                 my: "center-50 top+2",
                 at: "center top",
                 of: "#infoblock-check"
             });
-            $( "#panela" ).animate( {opacity: 1}, 500);
+            $( "#text-check" ).animate( {opacity: 1}, 500);
         },
         blur: function() {
-            $("#panela").hide();
+            $("#text-check").hide();
             $('#infoblock-check').animate({width: 55}, 200);
             $('#infoblock-check').animate({right: -120}, 200);
-            $( "#panela" ).animate( {opacity: 0}, 300);
+            $( "#text-check" ).animate( {opacity: 0}, 300);
         }
     });
     
     // slider button 2
     $("#icon-info").on({
         click: function () {
-            $("#panelb").show();
+            $("#text-info").show();
             $('#infoblock-info').animate({right: 40}, 200);
             $('#infoblock-info').animate({width: 230}, 200);
-            $("#panelb" ).position({
+            $("#text-info" ).position({
                 my: "center-50 top+2",
                 at: "center top",
                 of: "#infoblock-info"
             });
-            $( "#panelb" ).animate( {opacity: 1}, 500);
+            $( "#text-info" ).animate( {opacity: 1}, 500);
         },
         blur: function() {
-            $("#panelb").hide();
+            $("#text-info").hide();
             $('#infoblock-info').animate({width: 55}, 200);
             $('#infoblock-info').animate({right: -120}, 200);
-            $( "#panelb" ).animate( {opacity: 0}, 300);
+            $( "#text-info" ).animate( {opacity: 0}, 300);
         }
     });
 
     // slider button 3
     $("#icon-metod").on({
         click: function () {
+            $("#text-metod").show();
             $('#infoblock-metod').animate({right: 40}, 200);
             $('#infoblock-metod').animate({width: 230}, 200);
+            $("#text-metod" ).position({
+                my: "center-50 top+2",
+                at: "center top",
+                of: "#infoblock-metod"
+            });
+            $( "#text-metod" ).animate( {opacity: 1}, 500);
+
         },
         blur: function() {
+            $("#text-metod").hide();
             $('#infoblock-metod').animate({width: 40}, 200);
-            $('#infoblock-metod').animate({right: -140}, 200);
+            $('#infoblock-metod').animate({right: -135}, 200);
+            $( "#text-metod" ).animate( {opacity: 0}, 300);
         }  
     });
 
