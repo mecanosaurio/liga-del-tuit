@@ -106,7 +106,7 @@ function drawBubbles(newcat){
     //anima el aumento de opacidad del texto
     $('text').animate({
             opacity: 1,
-    }, Math.random()*2300);
+    }, 1000+Math.random()*1300);
 
     // then create the ubertooltips
     $("circle").each(function(){
@@ -118,8 +118,8 @@ function drawBubbles(newcat){
                 text: $(this).siblings('div').text()
             },
             style: {
+                classes: 'qtip-rounded qtip-shadow qtip-mx',
                 opacity: 0.8,
-                classes: 'qtip-rounded qtip-shadow qtip-mx'
             },
             position: {
                 my: 'center left',  // Position my top left...
@@ -135,7 +135,7 @@ function drawBubbles(newcat){
 
 // ---------------- ---------------- FUNCTIONS ----------------- --------------//
 function compa(a, b) {
-  return (Math.random()-0.5);
+  return (Math.random()*Math.random()-0.5);
 }
 
 
@@ -179,18 +179,18 @@ var main = function (){
 
     // draw the colorstrip below nav
     $('#colorstrip').colorstrip({
-        minInterval: 300,
-        maxInterval: 15000,
+        minInterval: 2000,
+        maxInterval: 11000,
         minWidth: 20,
-        maxWidth: 80,
-        opacity: 0.4,
+        maxWidth: 60,
+        opacity: 0.5,
         //colors: ['#f90', '#39c', '#c00', '#090', '#c3f', '#007', '#69f']
         //colors: ['#FFD7C0', '#FFA67B', '#FF6446', '#D3D3D2', '#8C8C8B' ,'#B6B7B5']
-        colors: ['#FF6446', '#D3D3D2', '#8C8C8B', '#FFA67B', '#FF6446']
+        colors: ['#8C8C8B', '#FF6446', '#D3D3D2', '#FFA67B', '#FF6446']
     });
 
     // click on nav event handler
-    $(".selec").on ('click', function(e){
+    $(".selec").on('click', function(e){
         e.preventDefault();
         //$(this).tab('show');
         var categ = $(this).attr('value');
@@ -201,45 +201,45 @@ var main = function (){
     // slider button 1
     $("#toggle-slide-button-1").on('click',function () {
         if (state1){
-            $('#navBtn-a').animate({right: 40}, 500);
-            $('#navBtn-a').animate({width: 230}, 500);
+            $('#navBtn-a').animate({right: 40}, 100);
+            $('#navBtn-a').animate({width: 230}, 100);
             $("#panela" ).position({
                 my: "center-50 top+2",
                 at: "center top",
                 of: "#navBtn-a"
             });
-            $( "#panela" ).animate( {opacity: 1}, 1500);
+            $( "#panela" ).animate( {opacity: 1}, 300);
 
         } else {
-            $( "#panela" ).animate({opacity: 0}, 100);
-            $('#navBtn-a').animate({width: 70}, 500);
-            $('#navBtn-a').animate({right: -120}, 500);
+            $( "#panela" ).animate({opacity: 0}, 20);
+            $('#navBtn-a').animate({width: 70}, 100);
+            $('#navBtn-a').animate({right: -120}, 100);
             $("#panela" ).position({
                 my: "left-30",
                 at: "left",
                 of: "#navBtn-a"
             });
-            $( "#panela" ).animate({opacity: 0}, 500);
+            $( "#panela" ).animate({opacity: 0}, 100);
         }
         state1 = !state1;  
     });
     
     // slider button 2
-    $("#toggle-slide-button-2").on('click',function () {
+    $("#toggle-slide-button-2").click(function () {
         if (state2){
-            $('#navBtn-b').animate({right: 40}, 500);
-            $('#navBtn-b').animate({width: 230}, 500);
+            $('#navBtn-b').animate({right: 40}, 100);
+            $('#navBtn-b').animate({width: 230}, 100);
             $("#panelb" ).position({
                 my: "center-50",
                 at: "center",
                 of: "#navBtn-b"
             });
-            $( "#panelb" ).animate( {opacity: 1}, 1500);
+            $( "#panelb" ).animate( {opacity: 1}, 300);
 
         } else {
-            $( "#panelb" ).animate({opacity: 0}, 50);
-            $('#navBtn-b').animate({width: 70}, 500);
-            $('#navBtn-b').animate({right: -120}, 500);
+            $( "#panelb" ).animate({opacity: 0}, 20);
+            $('#navBtn-b').animate({width: 70}, 100);
+            $('#navBtn-b').animate({right: -120}, 100);
             $("#panelb" ).position({
                 my: "left-30",
                 at: "left",
@@ -252,11 +252,11 @@ var main = function (){
     // slider button 3
     $("#toggle-slide-button-3").on('click', function () {
         if (state3){
-            $('#navBtn-c').animate({right: 40}, 500);
-            $('#navBtn-c').animate({width: 230}, 500);
+            $('#navBtn-c').animate({right: 40}, 100);
+            $('#navBtn-c').animate({width: 230}, 100);
         } else {
-            $('#navBtn-c').animate({width: 40}, 500);
-            $('#navBtn-c').animate({right: -150}, 500);
+            $('#navBtn-c').animate({width: 40}, 100);
+            $('#navBtn-c').animate({right: -150}, 100);
         }
         state3 = !state3;  
     });
