@@ -16,7 +16,7 @@
   font-family: coolvetica;
   src: url('coolvetica_rg.ttf') format("truetype");
 }
-
+f
 
 /*
 orange1: #FFD7C0;
@@ -28,7 +28,60 @@ gray3: #8C8C8B;
 */
 
 
-/* ------ ------ main sections and styles ------ ------ */
+/* ------ ------ header ------ ------ */
+.header {
+	margin-top: -70px;	
+}
+
+.title-main {
+	font-size: 8em;
+	color: #58595B;
+	font-family: 'SF Movie Poster', helvetica;
+	font-style: bold;
+	float: block;
+	/*text-shadow: 2px 4px 0 rgba(0,0,0,0.4);*/
+}
+.title-main:hover {
+    color: #A8A9AB;
+    text-decoration: none;
+}
+
+
+.logo-mx {
+}
+
+.logo-ethos {
+}
+
+/* ------ ------ navigation bar ------ ------ */
+.selec{
+    font-size:2.4em;
+    color: #4C4C4B;
+	font-family: 'SF Movie Poster', helvetica;
+	font-style: bold;
+	font-padding: 2px;
+}
+.selec:link {
+    color: #6C6C6B;
+    text-decoration: none;
+}
+.selec:visited {
+    color: #6C6C6B;
+    text-decoration: none;
+}
+.selec:hover {
+    color: #FF6446;
+    text-decoration: none;
+}
+.selec:active {
+    color: #FF6446;;
+    text-decoration: none;
+}
+
+
+
+
+
 body {
     font-family: 'SF Movie', helvetica;
     /*margin: 1em;*/
@@ -37,11 +90,6 @@ body {
     font-color: #FFFFFF;
     font-padding: 2;
 }
-
-.header {
-	margin-top: -70px;	
-}
-
 
 h1, h2, h3 {
 	margin: 0;
@@ -160,32 +208,6 @@ text .menc1c {
 
 }
 
-/*the navigation bar elements are selec*/
-.selec{
-    font-size:2.4em;
-    color: #4C4C4B;
-	font-family: 'SF Movie Poster', helvetica;
-	font-style: bold;
-	font-padding: 2px;
-	/*text-shadow: 1px 1px 0 rgba(0,0,0,0.4);*/
-}
-.selec:link {
-    color: #6C6C6B;
-    text-decoration: none;
-}
-.selec:visited {
-    color: #6C6C6B;
-    text-decoration: none;
-}
-.selec:hover {
-    color: #FF6446;
-    text-decoration: none;
-}
-.selec:active {
-    color: #FF6446;;
-    text-decoration: none;
-}
-
 
 .othertext{
 	color: #58595B;
@@ -193,14 +215,6 @@ text .menc1c {
 	font-family: 'SF Movie Poster', helvetica;
 	}
 
-.bigbutts {
-	font-size: 8em;
-	color: #58595B;
-	font-family: 'SF Movie Poster', helvetica;
-	font-style: bold;
-	float: block;
-	/*text-shadow: 2px 4px 0 rgba(0,0,0,0.4);*/
-}
 
 .gross {
 	color: #FFFF00;
