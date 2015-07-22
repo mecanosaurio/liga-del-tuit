@@ -106,12 +106,10 @@ circle {
 
 circle:hover {
   fill: #222222;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
-circle, .other {
-  fill: #1abc9c;
-}
+
 
 
 
@@ -266,26 +264,33 @@ h2 {
 	font-weight: normal;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
-p, footer {
-	/*margin: 1em 0 .5em;*/
-	color: silver;
-}
+
 footer {
-	height: 150px;
+	color: silver;
+	height: 100px;
 	background-color: #FFFFFF;
 	font-family: 'coolvetica', helvetica;
-	font-size: 0.8em;
-	margin-top: -1cm; /*[3em]*/
+	font-size: 0.70em;
+	/*top: -1.1cm;*/
+	bottom: 1cm;
 	vertical-align: center;
 }
 
-
-
-
-text .menc1c {
-  font-size: 0.5em;
+.foot1{
+	text-align: left;
+	left: 0.5cm;
 }
 
+.foot2{
+	text-align: right;
+	right: .5cm;
+	bottom:0.2cm;
+}
+
+.link-eth{
+	color: #808080;
+	font-size: 1.5em;
+}
 
 /* ------ style of other sections ----- */
 
@@ -402,17 +407,7 @@ text .menc1c {
     height: 0.3cm;
 }
 
-.foot1{
-	text-align: left;
-	left: 0.5cm;
-}
 
-.foot2{
-	text-align: right;
-	right: .5cm;
-	font-size: 1.2em;
-	bottom:0.2cm;
-}
 
 .demo-content > h4 {
     margin-top: 25px;
