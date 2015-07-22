@@ -87,7 +87,7 @@
 		<!--legend-->
 			<a href="#"><br> </a>
 
-			<div id="navBtn-a" class='block'>
+			<div id="infoblock-check" class='block'>
     			<div>
     				<a href="#" id="toggle-slide-button-1">
     				<span class="glyphicon glyphicon-check" style="color:white"></span>
@@ -97,7 +97,7 @@
 
 			<a href="#"><br> </a>
 			
-			<div id="navBtn-b">
+			<div id="infoblock-info">
     			<a href="#" id="toggle-slide-button-2">
     				<span class="glyphicon glyphicon-hand-up" style="color:white"></span>
     			</a>
@@ -107,7 +107,7 @@
 			<a href="#"><br> </a>
 			<a href="#"><br> </a>
 
-			<div id="navBtn-c">
+			<div id="infoblock-metod">
     			<a href="#" id="toggle-slide-button-3">
     				<span class="glyphicon glyphicon-cog" style="color:white"></span>
     			</a>
