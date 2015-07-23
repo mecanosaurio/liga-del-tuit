@@ -312,24 +312,7 @@ footer {
 	font-size: 2.2em ;
 }
 
-
-
-
-
-@media only screen and (min-width: 500px) {
-	h1 {
-		font-size: 3.75em;
-		line-height: 1.5em;
-	}
-	fieldset p > span {
-		font-size: 4em;
-	}
-}
-
-
-
-
-/** -------------qtip -----------------*/
+/* -------------qtip -----------------*/
 .qtip-mx{
     border-color: #8c8c8b;
     width: 350px;
@@ -351,6 +334,9 @@ footer {
     border-radius: 16px;
 }
 
+
+
+/* -------------tweet containers -----------------*/
 .name{
 	font-family: 'SF Movie Poster', helvetica;
     color: #FFF6EA;
@@ -359,9 +345,9 @@ footer {
     float:center;
 }
 
+
 .twcontainer{
 	font-family: 'coolvetica', helvetica;
-    /*margin: 1em;*/
     padding-top: 4px;
     font-size:13px;
     opacity: 0.9;
@@ -370,7 +356,6 @@ footer {
 .twcontainer img{
     border-radius: 10px;
 }
-
 
 .spantitle{
 	font-family: 'SF Movie Poster', helvetica;
@@ -428,7 +413,34 @@ h4 > a:active{
     text-decoration: none;
 }
 
+td > a{
+	color: #DDDDDD;
+    text-decoration: none;
+}
+td > a:hover{
+	color: #A0A0A0;
+    text-decoration: none;
+}
+td > a:active{
+	color: #DDDDDD;
+    text-decoration: none;
+}
 
+b > a{
+	color: #DDDDDD;
+    text-decoration: none;
+}
+b > a:hover{
+	color: #4C4C4B;
+    text-decoration: none;
+}
+b > a:active{
+	color: #DDDDDD;
+    text-decoration: none;
+}
+
+
+/* -------------modals -----------------*/
 #modal-eth {
     font-style: 'coolvetica', helvetica;
 	width: 410px; 
