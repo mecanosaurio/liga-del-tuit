@@ -16,7 +16,7 @@
   font-family: coolvetica;
   src: url('coolvetica_rg.ttf') format("truetype");
 }
-f
+
 
 /*
 orange1: #FFD3BC;
@@ -30,7 +30,7 @@ gray3: #8C8C8B;
 
 /* ------ ------ header ------ ------ */
 .header {
-	margin-top: -2cm;
+	margin-top: -0.3cm;
 }
 
 .titular {
@@ -177,7 +177,7 @@ circle:hover {
 	padding-left: 7px;
 	padding-top: 40px;
 	right: -120px;
-	opacity: 0.70;
+	opacity: 0.50;
 	border-radius: 15px;    
 	}
 
@@ -192,7 +192,7 @@ circle:hover {
 	padding-left: 15px;
 	padding-top: 2px;
 	right: -55px;
-	opacity: 0.60;
+	opacity: 0.50;
 	border-radius: 15px;
 	}
 
@@ -246,11 +246,11 @@ body {
 footer {
 	background-color: #FFFFFF;
 	color: silver;
-	height: 130px;
+	height: 150px;
 	font-family: 'coolvetica', helvetica;
 	font-size: 0.70em;
 	position: relative;
-	top: -1cm;
+	/*top: -1cm;*/
 	vertical-align: center;
 	z-index: 1;
 }
@@ -315,9 +315,11 @@ footer {
 
 /* -------------qtip -----------------*/
 .qtip-mx{
-    width: 350px;
     z-index: 1;
-    opacity: 0.8;
+    background-color: rgba(181,183,181,0.7);
+    border-radius: 20px;
+    border-color: #B6B7B5;
+
 }
 
 .qtip-content{
@@ -326,21 +328,20 @@ footer {
     z-index: 1;
     height: 500px; 
     overflow: auto;
-    border-radius: 16px;
 }
 
 .qtip{
 	z-index: 100;
 	padding: 8px;
-    background-color: #B6B7B5;
 }
 
 .qtip-default{
 	z-index: 2;
-    background-color: #B6B7B5;
-    border-color: #B6B7B5;
 }
 
+.qtip-content::selection {
+  background: ##FF6446;
+}
 
 /* -------------tweet containers -----------------*/
 .name{
@@ -432,7 +433,7 @@ h4 > a:active{
 }
 
 td > span >a{
-	color: #DDDDDD;
+	color: #8C8C8B;
     text-decoration: none;
 }
 td > span > a:hover{
