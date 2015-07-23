@@ -317,6 +317,7 @@ footer {
 .qtip-mx{
     width: 350px;
     z-index: 1;
+    opacity: 0.8;
 }
 
 .qtip-content{
@@ -325,27 +326,19 @@ footer {
     z-index: 1;
     height: 500px; 
     overflow: auto;
-    opacity: 0.9;
     border-radius: 16px;
-
 }
 
 .qtip{
 	z-index: 100;
 	padding: 8px;
     background-color: #B6B7B5;
-    opacity: 0.9;
-    border-radius: 16px;
-
 }
 
 .qtip-default{
 	z-index: 2;
-	padding: 8px;
     background-color: #B6B7B5;
     border-color: #B6B7B5;
-    opacity: 0.9;
-    border-radius: 16px;
 }
 
 
@@ -368,10 +361,11 @@ footer {
     padding-top: 4px;
     font-size:13px;
     opacity: 0.9;
+    z-index: 5;
 }
 
 .twcontainer img{
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .spantitle{
@@ -454,12 +448,12 @@ td > span > a:active{
 /* -------------modals -----------------*/
 #modal-eth {
 	width: 410px;
+	opacity: 0.8;
 }
 
 #modal-metod {
     width: 700px;
-    height: 500px; 
-    overflow: auto;
+	opacity: 0.8;    
 }
 
 
@@ -474,8 +468,14 @@ td > span > a:active{
     display: none;
 }
 
-.modaltext {
+.modaltext-eth {
     padding: 20px 20px 20px 20px;
+    overflow: auto;
+}
+.modaltext-met {
+    margin: 20px 10px 30px 25px;
+    height: 500px; 
+    overflow: auto;
 }
 .modalclose {
     position: absolute;
