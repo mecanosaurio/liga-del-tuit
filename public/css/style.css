@@ -339,10 +339,14 @@ footer {
 /* -------------tweet containers -----------------*/
 .name{
 	font-family: 'SF Movie Poster', helvetica;
-    color: #FFF6EA;
+    color: #FFF;
     padding-top: 0.1cm;
     font-size:2.2em;
     float:center;
+}
+
+.tweettext{
+	text-align: left;
 }
 
 
@@ -418,24 +422,11 @@ td > a{
     text-decoration: none;
 }
 td > a:hover{
-	color: #A0A0A0;
+	color: #FF6446;
     text-decoration: none;
 }
 td > a:active{
-	color: #DDDDDD;
-    text-decoration: none;
-}
-
-b > a{
-	color: #DDDDDD;
-    text-decoration: none;
-}
-b > a:hover{
-	color: #4C4C4B;
-    text-decoration: none;
-}
-b > a:active{
-	color: #DDDDDD;
+	color: #FFD3BC;
     text-decoration: none;
 }
 
