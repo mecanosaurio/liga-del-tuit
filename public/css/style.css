@@ -314,9 +314,7 @@ footer {
 
 /* -------------qtip -----------------*/
 .qtip-mx{
-    border-color: #8c8c8b;
     width: 350px;
-    border-color: #FFFFFF;
     z-index: 1;
 }
 
@@ -334,6 +332,14 @@ footer {
     border-radius: 16px;
 }
 
+.qtip-default{
+	z-index: 2;
+	padding: 8px;
+    background-color: #B6B7B5;
+    border-color: #B6B7B5;
+    opacity: 0.9;
+    border-radius: 16px;
+}
 
 
 /* -------------tweet containers -----------------*/

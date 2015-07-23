@@ -107,7 +107,7 @@ function drawBubbles(newcat){
             },
             style: {
                 classes: 'qtip-rounded qtip-shadow qtip-mx',
-                width: '440px',
+                width: '460px',
                 def: 'false',
                 opacity: '0.8'
             },
