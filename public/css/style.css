@@ -106,7 +106,7 @@ circle {
 
 circle:hover {
 	/*fill: #222222;*/
-	transform: scale(1.1);
+	transform: scale(1.15);
 }
 
 
@@ -246,7 +246,7 @@ body {
 footer {
 	background-color: #FFFFFF;
 	color: silver;
-	height: 150px;
+	height: 100px;
 	font-family: 'coolvetica', helvetica;
 	font-size: 0.70em;
 	position: relative;
