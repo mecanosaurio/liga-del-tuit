@@ -16,19 +16,7 @@ var svg = d3.select('svg')
 	.attr('height', diameter)
     .attr('margin-top', 200);
 
-// define the omnitooltip
-var tooltip = d3.select("body")
-    .append("div")
-    .attr('id', 'tooltip')
-    .style("position", "absolute")
-    .style("z-index", "10")
-    .style("visibility", "hidden")
-    .style("color", "white")
-    .style("padding", "8px")
-    .style("background-color", "rgba(0, 0, 0, 0.75)")
-    .style("border-radius", "6px")
-    .style("font", "2em SF Movie Poster")
-    .text(":)");
+//
 
 // invoke pack layout and misterious filtering
 var bubble = d3.layout.pack()
@@ -44,7 +32,8 @@ function drawBubbles(newcat){
     var bop = svg.selectAll('g')
         .data({}, function(d) {return d;});
         bop.exit().remove();
-
+    
+    var tooltip = d3.select("#tooltip");
 
     var nodes = bubble.nodes(processData(data[newcat]))
 	    .filter(function(d) { return !d.children; }); // filter out the outer bubble 
@@ -113,13 +102,14 @@ function drawBubbles(newcat){
         $(this).qtip({
             show: 'click',
             hide:'unfocus',
-            title: 'catname',
             content:{
                 text: $(this).siblings('div').text()
             },
             style: {
                 classes: 'qtip-rounded qtip-shadow qtip-mx',
-                opacity: 0.8,
+                width: '380px',
+                def: 'false',
+                opacity: '0.8'
             },
             position: {
                 my: 'center left',  // Position my top left...
@@ -198,7 +188,7 @@ var main = function (){
         drawBubbles(categ);
     });
  
-    // slider button 1
+    // icon-check
     $("#icon-check").on({
         click: function () {
             $("#text-check").show();
@@ -219,7 +209,7 @@ var main = function (){
         }
     });
     
-    // slider button 2
+    // icon-info
     $("#icon-info").on({
         click: function () {
             $("#text-info").show();
@@ -240,29 +230,7 @@ var main = function (){
         }
     });
 
-    /*// slider button 3
-    $("#icon-metod").on({
-        click: function () {
-            $("#text-metod").show();
-            $('#infoblock-metod').animate({right: 40}, 200);
-            $('#infoblock-metod').animate({width: 230}, 200);
-            $("#text-metod" ).position({
-                my: "center-50 top+2",
-                at: "center top",
-                of: "#infoblock-metod"
-            });
-            $( "#text-metod" ).animate( {opacity: 1}, 500);
-
-        },
-        blur: function() {
-            $("#text-metod").hide();
-            $('#infoblock-metod').animate({width: 40}, 200);
-            $('#infoblock-metod').animate({right: -135}, 200);
-            $( "#text-metod" ).animate( {opacity: 0}, 300);
-        }  
-    });*/
-
-
+    // modal-ethos
     $('.logo-ethos').on('click', function ( e ) {
         Custombox.open({
             target: '#modal-eth',
@@ -271,6 +239,8 @@ var main = function (){
         e.preventDefault();
     });
 
+
+    // modal-method
     $('#text-metod').on('click', function ( e ) {
         Custombox.open({
             target: '#modal-metod',

@@ -301,13 +301,15 @@ footer {
 	position: absolute;
 	z-index: 10;
 	visibility: hidden;
+	padding-left: 6px;
+	padding-right: 6px;
+	border-radius: 10px;
+	font-family: "SF Movie Poster", helvetica;
+	text-align: center;
+	color: white;
 	background-color: #000000;
 	opacity: 0.7;
-	color: white;
-	padding: 8px;
-	border-radius: 6px;
 	font-size: 2.2em ;
-	font-family: "SF Movie Poster", helvetica;
 }
 
 
@@ -330,34 +332,29 @@ footer {
 /** -------------qtip -----------------*/
 .qtip-mx{
     border-color: #8c8c8b;
-    width: 300px;
-    background-color: #B6B7B5;;
+    width: 350px;
     border-color: #FFFFFF;
-    opacity: 0.9;
-    
+    z-index: 1;
 }
-.qtip-mx .qtip-content{
+
+.qtip-content{
     font-family: 'coolvetica', helvetica;
     font-size: 12px;
-    font-color: #000000;
-    background-color: #B6B7B5;;
-    opacity: 0.9;
-
+    z-index: 1;
 }
 
 .qtip{
+	z-index: 1;
 	padding: 8px;
+    background-color: #B6B7B5;
     opacity: 0.9;
-    background-color: #B6B7B5;;
     border-radius: 16px;
 }
 
 .name{
 	font-family: 'SF Movie Poster', helvetica;
-    /*margin: 1em;*/
     color: #FFF6EA;
-    font-color: #FFFFFF;
-    font-padding: 6;
+    padding-top: 0.1cm;
     font-size:2.2em;
     float:center;
 }
@@ -365,8 +362,7 @@ footer {
 .twcontainer{
 	font-family: 'coolvetica', helvetica;
     /*margin: 1em;*/
-    font-color: #000000;
-    font-padding: 2px;
+    padding-top: 4px;
     font-size:13px;
     opacity: 0.9;
 }
