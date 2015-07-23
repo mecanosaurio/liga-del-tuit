@@ -98,15 +98,15 @@ gray3: #8C8C8B;
 
 /* ----- some properties of circles ------ */
 circle {
-	-moz-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	-webkit-transition: all 0.2s;
-	transition: all 0.2s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
 circle:hover {
-  fill: #222222;
-  opacity: 0.2;
+	/*fill: #222222;*/
+	transform: scale(1.1);
 }
 
 
