@@ -263,7 +263,7 @@ footer {
 .foot2{
 	position: relative;
 	text-align: right;
-	right: .5cm;
+	right: 1.5cm;
 	bottom:0.2cm;
 }
 
@@ -430,15 +430,15 @@ h4 > a:active{
     text-decoration: none;
 }
 
-td > span{
+td > span >a{
 	color: #DDDDDD;
     text-decoration: none;
 }
-td > span:hover{
+td > span > a:hover{
 	color: #FF6446;
     text-decoration: none;
 }
-td > span:active{
+td > span > a:active{
 	color: #FFD3BC;
     text-decoration: none;
 }
