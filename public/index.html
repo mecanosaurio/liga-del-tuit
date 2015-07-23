@@ -194,6 +194,25 @@
 
 
     <!-- .. .. ... .. hiden SECTION .. .. ... .. -->
+    var tooltip = d3.select("body")
+    .append("div")
+    .attr('id', 'tooltip')
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden")
+    .style("color", "white")
+    .style("padding", "8px")
+    .style("background-color", "rgba(0, 0, 0, 0.75)")
+    .style("border-radius", "6px")
+    .style("font", "2em SF Movie Poster")
+    .text(":)");
+    <!--tooltip-->
+    <div id="tooltip">
+    </div>
+
+
+
+    <!--ethos-modal-->
   	<div id="modal-eth" class="modal-demo" style="display: none;">
 		<div class="modalclose" onclick="Custombox.close();">
 			<span><h5>X</h5></span>
@@ -236,6 +255,7 @@
 		</div>
 	</div>
 
+	<!--metod-modal-->
 	<div id="modal-metod" class="modal-demo" style="display: none;">
 		<div class="modalclose" onclick="Custombox.close();">
 			<span><h5>X</h5></span>
