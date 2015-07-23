@@ -376,9 +376,10 @@ footer {
 	font-family: 'SF Movie Poster', helvetica;
     color: #4C4C4B;
     font-color: #4C4C4B;
-    font-size:3.6em;
+    font-size:3.2em;
     float: left;
-    margin-bottom: -0.5cm;
+    display: block;
+    margin-top: 0.22cm;	
 }
 
 .spancount{
@@ -386,7 +387,7 @@ footer {
     color: #FF6446;
     font-color: #FF6446;
     font-padding: 2;
-    font-size:1.2em;
+    font-size:1.4em;
     float: right;
     font-style: normal;
 }
@@ -400,21 +401,33 @@ footer {
     float: right;
     font-style: normal;
 }
-.toptitle{
-	font-family: 'SF Movie Poster', helvetica;
-    color: #FFFFFF;
-    font-color: #FFFFFF;
-    /*background-color: #000;*/
-    margin-top: 0.3cm;
-    display: block;
-    height: 0.3cm;
+
+p > a{
+	color: #A0A0A0;
+    text-decoration: none;
+}
+p > a:hover{
+	color: #4C4C4B;
+    text-decoration: none;
+}
+p > a:active{
+	color: #4C4C4B;
+    text-decoration: none;
 }
 
-
-
-.demo-content > h4 {
-    margin-top: 25px;
+h4 > a{
+	color: #4C4C4B;
+    text-decoration: none;
 }
+h4 > a:hover{
+	color: #A0A0A0;
+    text-decoration: none;
+}
+h4 > a:active{
+	color: #4C4C4B;
+    text-decoration: none;
+}
+
 
 #modal-eth {
     font-style: 'coolvetica', helvetica;
