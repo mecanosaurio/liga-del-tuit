@@ -430,15 +430,15 @@ h4 > a:active{
     text-decoration: none;
 }
 
-td > a{
+td > span{
 	color: #DDDDDD;
     text-decoration: none;
 }
-td > a:hover{
+td > span:hover{
 	color: #FF6446;
     text-decoration: none;
 }
-td > a:active{
+td > span:active{
 	color: #FFD3BC;
     text-decoration: none;
 }
