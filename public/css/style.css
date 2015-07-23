@@ -397,6 +397,13 @@ footer {
     font-style: normal;
 }
 
+.screenname{
+    float: left;
+}
+.createdtime{
+    float: right;
+}
+
 p > a{
 	color: #A0A0A0;
     text-decoration: none;
