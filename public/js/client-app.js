@@ -55,7 +55,8 @@ function drawBubbles(newcat){
         .on("mousemove", function() {
             return tooltip.style("top", (d3.event.pageY-20)+"px").style("left",(d3.event.pageX+10)+"px");
         })
-        .on("mouseout", function(){return tooltip.style("visibility", "hidden");
+        .on("mouseout", function(){
+            return tooltip.style("visibility", "hidden");
         });
 
     vis.append("text")
@@ -114,6 +115,23 @@ function drawBubbles(newcat){
             }
         })
     })
+
+    // then create the ubertooltips
+    $('circle').each(function() {
+        var cir = $('#circe');
+        cir.on({
+            mouseover: function(){
+                cir.style("visibility", "visible");
+                cir.style("color: #FFFFFF");
+            },
+            mousemove: function(){
+                return cir.style("top", (d3.event.pageY)+"px").style("left",(d3.event.pageX)+"px");
+            },
+            mouseout: function(){
+                return tooltip.style("visibility", "hidden");
+            }
+        });
+    });
 };
 
 
