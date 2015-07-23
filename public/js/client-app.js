@@ -109,7 +109,7 @@ function drawBubbles(newcat){
                 classes: 'qtip-rounded qtip-shadow qtip-mx',
                 width: '460px',
                 def: 'false',
-                opacity: '0.8'
+                opacity: '0.8',
             },
             position: {
                 my: 'center left',  // Position my top left...
@@ -234,7 +234,8 @@ var main = function (){
     $('.logo-ethos').on('click', function ( e ) {
         Custombox.open({
             target: '#modal-eth',
-            effect: 'slide'
+            effect: 'slide',
+            overlayOpacity: 0.7 
         });
         e.preventDefault();
     });
@@ -244,7 +245,8 @@ var main = function (){
     $('#text-metod').on('click', function ( e ) {
         Custombox.open({
             target: '#modal-metod',
-            effect: 'slide'
+            effect: 'slide',
+            overlayOpacity: 0.7
         });
         e.preventDefault();
     });
