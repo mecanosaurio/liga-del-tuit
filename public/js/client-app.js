@@ -265,7 +265,7 @@ var main = function (){
 
     $('.logo-ethos').on('click', function ( e ) {
         Custombox.open({
-            target: '#modal',
+            target: '#modal-eth',
             effect: 'slide'
         });
         e.preventDefault();

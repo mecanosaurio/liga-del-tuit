@@ -403,14 +403,14 @@ footer {
     margin-top: 25px;
 }
 
-#modal {
+#modal-eth {
     font-style: 'coolvetica', helvetica;
-	width: 400px; 
+	width: 410px; 
 }
 
-#modal-method {
+#modal-metod {
+    width: 700px;
     font-style: 'coolvetica', helvetica;
-    width: 800px;
 }
 
 
