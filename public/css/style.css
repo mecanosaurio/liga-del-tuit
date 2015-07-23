@@ -237,13 +237,11 @@ circle:hover {
 
 
 body {
-    font-family: 'SF Movie', helvetica;
-    /*margin: 1em;*/
     background: #FFF6EA;
+    font-family: 'coolvetica', helvetica;
     color: #FFF6EA;
     font-color: #FFFFFF;
-    font-padding: 2;
-}
+    }
 
 
 footer {
@@ -407,15 +405,13 @@ footer {
 
 #modal {
     font-style: 'coolvetica', helvetica;
-	font-color: #B6B7B5;
 }
 
 .modal-demo {
     font-style: 'coolvetica', helvetica;
-    color: #B6B7B5;
+    color: #767775;
     background-color: #E6E7E5;
-    width: 600px;
-    border: #B6B7B5 solid 4px;
+    border: #767775 solid 4px;
     border-radius: 10px;
     box-shadow: 0 8px 6px -6px black;
     text-align: left;
@@ -429,12 +425,15 @@ footer {
     border-bottom: #CCC solid 1px;
 }
 .modaltext {
-    font-style: 'coolvetica', helvetica;
-    font-color: #FFF;
     padding: 0 20px 20px 20px;
 }
 .modalclose {
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 17px;
+}
+
+h2, h3{
+	font-family: 'SF Movie Poster', helvetica;
+	font-size: 3em;
 }
