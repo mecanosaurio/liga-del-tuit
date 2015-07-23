@@ -405,7 +405,14 @@ footer {
 
 #modal {
     font-style: 'coolvetica', helvetica;
+	width: 400px; 
 }
+
+#modal-method {
+    font-style: 'coolvetica', helvetica;
+    width: 800px;
+}
+
 
 .modal-demo {
     font-style: 'coolvetica', helvetica;
@@ -418,19 +425,14 @@ footer {
     display: none;
     opacity: 0.8;
 }
-.modaltitle {
-    padding: 10px 20px 15px 20px;
-    line-height: 18px;
-    font-size: 18px;
-    border-bottom: #CCC solid 1px;
-}
+
 .modaltext {
-    padding: 0 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
 }
 .modalclose {
     position: absolute;
-    top: 5px;
-    right: 17px;
+    top: 3px;
+    right: 15px;
 }
 
 h2, h3{
