@@ -113,26 +113,23 @@ function drawBubbles(newcat){
                 at: 'center right', // at the bottom right of...
                 target: $(this) // my target
             }
-        })
-    })
-
-    // then create the ubertooltips
-    $('circle').each(function() {
-        var cir = $('#circe');
-        cir.on({
+        });
+        // this is for circe
+        $(this).on({
             mouseover: function(){
-                cir.style("visibility", "visible");
-                cir.style("color: #FFFFFF");
+                cir.css("visibility", "visible");
+                cir.css("border-color: #FFFFFF");
             },
             mousemove: function(){
-                return cir.style("top", (d3.event.pageY)+"px").style("left",(d3.event.pageX)+"px");
+                return cir.css("top", (event.pageY)+"px").css("left",(event.pageX)+"px");
             },
             mouseout: function(){
-                return tooltip.style("visibility", "hidden");
+                return cir.css("visibility", "hidden");
             }
         });
-    });
-};
+    }); // end of circle selector
+
+};  // end of function
 
 
 
