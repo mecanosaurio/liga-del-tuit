@@ -378,19 +378,28 @@ footer {
     font-color: #4C4C4B;
     font-size:3.6em;
     float: left;
-    font-padding: 2;
+    margin-bottom: -0.5cm;
 }
 
 .spancount{
-	font-family: 'SF Movie Poster', helvetica;
+	font-family: 'coolvetica', helvetica;
     color: #FF6446;
     font-color: #FF6446;
     font-padding: 2;
-    font-size:1.7em;
+    font-size:1.2em;
     float: right;
     font-style: normal;
 }
 
+.spanmenc{
+	font-family: 'coolvetica', helvetica;
+    color: #FFD3BC;
+    font-color: #FFD3BC;
+    font-padding: 2;
+    font-size:1em;
+    float: right;
+    font-style: normal;
+}
 .toptitle{
 	font-family: 'SF Movie Poster', helvetica;
     color: #FFFFFF;
