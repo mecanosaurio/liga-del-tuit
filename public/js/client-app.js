@@ -204,7 +204,7 @@ var main = function (){
  
     // icon-check
     $("#icon-check").on({
-        click: function () {
+        click: function (e) {
             $("#text-check").show();
             $('#infoblock-check').animate({right: 40}, 200);
             $('#infoblock-check').animate({width: 230}, 200);
@@ -214,6 +214,7 @@ var main = function (){
                 of: "#infoblock-check"
             });
             $( "#text-check" ).animate( {opacity: 1}, 500);
+            e.preventDefault();
         },
         blur: function() {
             $("#text-check").hide();
@@ -225,7 +226,7 @@ var main = function (){
     
     // icon-info
     $("#icon-info").on({
-        click: function () {
+        click: function (e) {
             $("#text-info").show();
             $('#infoblock-info').animate({right: 40}, 200);
             $('#infoblock-info').animate({width: 230}, 200);
@@ -235,6 +236,7 @@ var main = function (){
                 of: "#infoblock-info"
             });
             $( "#text-info" ).animate( {opacity: 1}, 500);
+            e.preventDefault();
         },
         blur: function() {
             $("#text-info").hide();

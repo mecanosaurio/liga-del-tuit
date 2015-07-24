@@ -1,6 +1,10 @@
 
 /* ------ ------ fonts and other misteries ------ ------ */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* { 
+-moz-box-sizing: border-box; 
+-webkit-box-sizing: border-box; 
+box-sizing: border-box; 
+}
 
 @font-face {
   font-family: SF Movie Poster;
@@ -38,7 +42,7 @@ gray3: #8C8C8B;
 	color: #58595B;
 	font-family: 'SF Movie Poster', helvetica;
 	font-style: bold;
-	float: block;
+	/*float: block;*/
 	/*text-shadow: 2px 4px 0 rgba(0,0,0,0.4);*/
 }
 .titular:hover {
@@ -50,6 +54,7 @@ gray3: #8C8C8B;
 }
 
 .logo-ethos {
+	padding-right: 0px;
 }
 
 /* ------ ------ navigation bar ------ ------ */
@@ -89,7 +94,7 @@ gray3: #8C8C8B;
 #chart {
 	width: 100%;
 	text-align: center;
-	float: center;
+	/*float: center;*/
 	font-family: 'SF Movie Poster', helvetica;
 	font-style: bold;
 	color: #FFFFFF;
@@ -241,19 +246,20 @@ body {
     font-family: 'coolvetica', helvetica;
     color: #FFF6EA;
     font-color: #FFFFFF;
-    }
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 
 
 footer {
 	background-color: #FFFFFF;
 	color: silver;
-	height: 100px;
+	height: 150px;
 	font-family: 'coolvetica', helvetica;
 	font-size: 0.70em;
-	position: relative;
-	/*top: -1cm;*/
-	vertical-align: center;
-	z-index: 1;
 }
 
 .foot1{
