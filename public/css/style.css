@@ -86,6 +86,7 @@ gray3: #8C8C8B;
     overflow: hidden;
     position: relative;
     height: 2px;
+    left: .4cm;
     width: 85%;
     align: center;
     }
@@ -271,7 +272,7 @@ footer {
 .foot2{
 	position: relative;
 	text-align: right;
-	right: 1.0cm;
+	right: 0.3cm;
 	bottom:0.2cm;
 }
 
