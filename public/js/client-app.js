@@ -19,7 +19,7 @@ var svg = d3.select('svg')
 var bubble = d3.layout.pack()
     .sort(compa)
 	.size([diameter, diameter])
-	.padding(4) // padding between adjacent circles
+	.padding(8) // padding between adjacent circles
 	.value(function(d) {return d.size;}); // new data will be loaded to bubble layout
 
 
@@ -40,7 +40,7 @@ function drawBubbles(newcat){
     var vis = svg.selectAll('g')
 	    .data(nodes, function(d) {return d.name;})
 	    .enter().append('g')
-        .attr('transform', function(d) { return 'translate(' + d.x + ',' + d.y + ')'; })
+        .attr('transform', function(d) { return 'translate(' + (1*d.x +(Math.random()-0.5)*30) + ',' + (1*d.y +(Math.random()-0.5)*30) + ')'; })
         .attr('cx', function(d){return d.x})
         .attr('cy', function(d){return d.y})
         ;

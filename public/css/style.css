@@ -106,7 +106,8 @@ circle {
 
 .bubble:hover {
 	/*fill: #222222;*/
-	transform: scale(1.15);
+	transform: scale(1.25);
+	stroke-color: white;
 }
 
 
