@@ -48,7 +48,7 @@ function drawBubbles(newcat){
     vis.append('circle') 
 	    //.attr('r',0)
         .attr('value', function(d) { return 1.05*d.r+((Math.random()-0.5) * 20); }) //this is the random traslaper
-	    .attr('class', function(d) { return sizeToClass(d.value); })
+	    .attr('class', function(d) { return sizeToClass(d.value)+' bubble'; })
         .attr('opacity', 0)
         .attr('catname', function(d) { return d.name; })
         .on("mouseover", function(d) {
@@ -77,7 +77,7 @@ function drawBubbles(newcat){
         .text(function(d) { return tts[newcat][d.name]; });
     
     //$('circle').animate().toggle().toggle();
-    $('circle').each(function() {
+    $('.bubble').each(function() {
         var nr = $(this).attr('value');
         $(this).animate({
             r: nr,
@@ -99,7 +99,7 @@ function drawBubbles(newcat){
     }, 500+Math.random()*1300);
 
     // then create the ubertooltips
-    $("circle").each(function(){
+    $(".bubble").each(function(){
         var cir = $("#circe");
         $(this).qtip({
             show: 'click',
@@ -118,7 +118,7 @@ function drawBubbles(newcat){
                 target: $(this) // my target
             }
         });
-        // this is for circe
+        /*/ this is for circe
         $(this).on({
             mouseover: function(){
                 cir.css($(this).offset());
@@ -127,7 +127,7 @@ function drawBubbles(newcat){
             mouseout: function(){
                 return cir.css("visibility", "hidden");
             }
-        });
+        });*/
     }); // end of circle selector
 
 };  // end of function

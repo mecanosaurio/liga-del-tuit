@@ -104,7 +104,7 @@ circle {
 	transition: all 0.5s;
 }
 
-circle:hover {
+.bubble:hover {
 	/*fill: #222222;*/
 	transform: scale(1.15);
 }
@@ -302,8 +302,8 @@ footer {
 	position: absolute;
 	z-index:9999;
 	visibility: hidden;
-	padding-left: 6px;
-	padding-right: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
 	border-radius: 10px;
 	font-family: "SF Movie Poster", helvetica;
 	text-align: center;
@@ -317,19 +317,13 @@ footer {
 	position: absolute;
 	height:100px;
 	width: 100px;
-	border-radius: 50%;
-	color: black;
-	background-color: #000;
-	border-color: #000000;
-	border-width: 3px;
 }
 /* -------------qtip -----------------*/
 .qtip-mx{
     z-index: 1;
-    background-color: rgba(181,183,181,0.7);
+    background-color: rgba(181,183,181,0.8);
     border-radius: 20px;
     border-color: #B6B7B5;
-
 }
 
 .qtip-content{
