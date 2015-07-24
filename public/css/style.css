@@ -321,7 +321,7 @@ footer {
 	color: black;
 	background-color: #000;
 	border-color: #000000;
-	opacity: 1;
+	border-width: 3px;
 }
 /* -------------qtip -----------------*/
 .qtip-mx{

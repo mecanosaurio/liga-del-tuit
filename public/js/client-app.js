@@ -40,7 +40,10 @@ function drawBubbles(newcat){
     var vis = svg.selectAll('g')
 	    .data(nodes, function(d) {return d.name;})
 	    .enter().append('g')
-        .attr('transform', function(d) { return 'translate(' + d.x + ',' + d.y + ')'; });
+        .attr('transform', function(d) { return 'translate(' + d.x + ',' + d.y + ')'; })
+        .attr('cx', function(d){return d.x})
+        .attr('cy', function(d){return d.y})
+        ;
 
     vis.append('circle') 
 	    //.attr('r',0)
@@ -97,6 +100,7 @@ function drawBubbles(newcat){
 
     // then create the ubertooltips
     $("circle").each(function(){
+        var cir = $("#circe");
         $(this).qtip({
             show: 'click',
             hide:'unfocus',
@@ -117,12 +121,9 @@ function drawBubbles(newcat){
         // this is for circe
         $(this).on({
             mouseover: function(){
+                cir.css($(this).offset());
                 cir.css("visibility", "visible");
-                cir.css("border-color: #FFFFFF");
-            },
-            mousemove: function(){
-                return cir.css("top", (event.pageY)+"px").css("left",(event.pageX)+"px");
-            },
+                },
             mouseout: function(){
                 return cir.css("visibility", "hidden");
             }
