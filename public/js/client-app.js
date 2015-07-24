@@ -54,6 +54,8 @@ function drawBubbles(newcat){
         .on("mouseover", function(d) {
             tooltip.text(d.name + ": " + d.value);
             tooltip.style("visibility", "visible");
+            // get to front
+            this.parentNode.parentNode.appendChild(this.parentNode);
         })
         .on("mousemove", function() {
             return tooltip.style("top", (d3.event.pageY-20)+"px").style("left",(d3.event.pageX+10)+"px");
