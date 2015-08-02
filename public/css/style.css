@@ -62,7 +62,7 @@ gray3: #8C8C8B;
     font-size:2.4em;
     color: #4C4C4B;
 	font-family: 'SF Movie Poster', helvetica;
-	font-style: bold;
+	font-style: normal;
 	font-padding: 2px;
 }
 .selec:link {
@@ -97,7 +97,7 @@ gray3: #8C8C8B;
 	text-align: center;
 	/*float: center;*/
 	font-family: 'SF Movie Poster', helvetica;
-	font-style: bold;
+	font-style: normal;
 	color: #FFFFFF;
 }
 
@@ -169,7 +169,7 @@ circle {
 	padding-left: 8px;
 	padding-top: 40px;
 	right: -120px;
-	opacity: 0.70;
+	opacity: 0.85;
 	border-radius: 15px;
 	}
 
@@ -184,7 +184,7 @@ circle {
 	padding-left: 7px;
 	padding-top: 40px;
 	right: -120px;
-	opacity: 0.50;
+	opacity: 0.85;
 	border-radius: 15px;    
 	}
 
@@ -295,7 +295,7 @@ footer {
 .othertext{
 	color: #58595B;
     font-size: 2em;
-	font-family: 'SF Movie Poster', helvetica;
+	font-family: 'SF Movie', helvetica;
 	}
 
 
@@ -389,6 +389,14 @@ footer {
     float: left;
     display: block;
     margin-top: 0.22cm;	
+}
+.spantitle:hover{
+	color: #FF6446;
+    text-decoration: none;
+}
+.spantitle:visited{
+	color: #4C4C4B;
+    text-decoration: none;
 }
 
 .spancount{

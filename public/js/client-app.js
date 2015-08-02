@@ -83,7 +83,7 @@ function drawBubbles(newcat){
         var nr = $(this).attr('value');
         $(this).animate({
             r: nr,
-            opacity: 0.80
+            opacity: 0.88
             }, {
                 duration: Math.random()*2100,
                 step: function(now){
@@ -251,7 +251,7 @@ var main = function (){
         Custombox.open({
             target: '#modal-eth',
             effect: 'slide',
-            overlayOpacity: 0.7 
+            overlayOpacity: 0.85 
         });
         e.preventDefault();
     });
@@ -262,7 +262,7 @@ var main = function (){
         Custombox.open({
             target: '#modal-metod',
             effect: 'slide',
-            overlayOpacity: 0.7
+            overlayOpacity: 0.85
         });
         e.preventDefault();
     });
