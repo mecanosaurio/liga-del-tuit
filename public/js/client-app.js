@@ -9,7 +9,7 @@ var state3 = true;
 
 // create chart svg space
 var svg = d3.select('svg')
-	.attr('width', diameter+100)
+	.attr('width', diameter+200)
 	.attr('height', diameter)
     .attr('margin-top', 200);
 
@@ -100,7 +100,7 @@ function drawBubbles(newcat){
             opacity: 1,
     }, 500+Math.random()*1300);
 
-    // then create the ubertooltips
+    // then create the qtips
     $(".bubble").each(function(){
         var cir = $("#circe");
         $(this).qtip({
