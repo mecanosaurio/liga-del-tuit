@@ -23,9 +23,9 @@ box-sizing: border-box;
 
 
 /*
-orange1: #FFD3BC;
-orange2: #FFA67B;
-orange3: #FF6446;
+orange1: #FDD5C7;
+orange2: #F7A18B;
+orange3: #FE7459;
 gray1: #D3D3D2;
 gray2: #B6B7B5;
 gray3: #8C8C8B;
@@ -74,11 +74,11 @@ gray3: #8C8C8B;
     text-decoration: none;
 }
 .selec:hover {
-    color: #FF6446;
+    color: #FE7459;
     text-decoration: none;
 }
 .selec:active {
-    color: #FF6446;;
+    color: #FE7459;
     text-decoration: none;
 }
 
@@ -90,6 +90,22 @@ gray3: #8C8C8B;
     width: 85%;
     align: center;
     }
+
+.txtodo, .txejec, .txdipu, .txsena, .txgobe, .txopin, .txpri, .txpan, .txprd{
+	font-family: 'SF Movie Poster', helvetica;
+    color: #6C6C6B;
+    font-size: 1.6em;
+    cursor: pointer;
+    display: block;
+    float: left;  
+    z-index: 3;
+    position: absolute;
+    /*left: 3.3cm;
+    top: 4.6cm;*/
+    left: 1cm;
+    top:-0.2cm;
+}
+
 
 /* ------ ------ chart main section ------ ------ */
 #chart {
@@ -114,6 +130,7 @@ circle {
 	/*fill: #222222;*/
 	transform: scale(1.25);
 	stroke-color: white;
+	cursor: ;
 }
 
 
@@ -122,7 +139,7 @@ circle {
 
 /* ------ bubble styles ----- */
 .burb1 {
-	fill: #FFD3BC;
+	fill: #FDD5C7;
 	font-size: 2.1em;
 }
 
@@ -132,7 +149,7 @@ circle {
 }
 
 .burb3 { 
-	fill: #FFA67B;
+	fill: #F7A18B;
 	font-size: 2.6em;
 }
 
@@ -142,7 +159,7 @@ circle {
 }
 
 .burb5 {
-	fill: #FF6446;
+	fill: #FE7459;
 	font-size: 3.4em;
 }
 
@@ -160,7 +177,7 @@ circle {
 /* legend panel */
 #infoblock-check{	
 	font-size: 2em;
-	background-color: #FFA67B;
+	background-color: #F7A18B;
 	font-color: #FFFFFF;
 	height: 120px;
 	width: 55px;
@@ -175,7 +192,7 @@ circle {
 
 #infoblock-info{
 	font-size: 2em;
-	background-color: #FF6446;
+	background-color: #FE7459;
 	color: #FFFFFF;
 	height: 120px;
 	width: 55px;
@@ -243,9 +260,10 @@ circle {
 
 /* ---- ----- ----- ------ ------- --- */
 body {
-    background: #FFF6EA;
+    /*background: #FFF6EA;*/
+    background: #FAF1EC;
     font-family: 'coolvetica', helvetica;
-    color: #FFF6EA;
+    color: #FAF1EC;
     font-color: #FFFFFF;
     width: 100%;
     height: 100%;
@@ -257,10 +275,10 @@ body {
 
 footer {
 	background-color: #FFFFFF;
-	color: silver;
+	color: #A0A0A0;
 	height: 150px;
 	font-family: 'coolvetica', helvetica;
-	font-size: 0.70em;
+	font-size: 0.80em;
 }
 
 .foot1{
@@ -329,9 +347,9 @@ footer {
 /* -------------qtip -----------------*/
 .qtip-mx{
     z-index: 1;
-    background-color: rgba(181,183,181,0.8);
+    background-color: rgba(213,211,213,0.85);
     border-radius: 20px;
-    border-color: #B6B7B5;
+    border-color: #D5D3D5;
 }
 
 .qtip-content{
@@ -352,23 +370,35 @@ footer {
 }
 
 .qtip-content::selection {
-  background: ##FF6446;
+  background: ##FE7459;
 }
 
 /* -------------tweet containers -----------------*/
+/*.tooltiphead{
+	position:relative;
+}
+.toptitle{
+	z-index: 10;
+	position:relative;
+	background-color: #000;
+	border-radius: 20px 20px 0px 0px;
+	padding-top: -0.5cm;
+}*/
+
+
 .name{
-	font-family: 'SF Movie Poster', helvetica;
-    color: #FFF;
+	font-family: 'coolvetica', helvetica;
+    color: #000;
     padding-top: 0.1cm;
-    font-size:2.2em;
+    font-size:1.2em;
     float:left;
 }
 .name:hover{
-	color: #FFD3BC;
+	color: #FFF;
 	text-decoration: none;
 }
 .name:visited{
-	color: #FFF;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -399,7 +429,7 @@ footer {
     margin-top: 0.22cm;	
 }
 .spantitle:hover{
-	color: #FF6446;
+	color: #FE7459;
     text-decoration: none;
 }
 .spantitle:visited{
@@ -408,21 +438,21 @@ footer {
 }
 
 .spancount{
-	font-family: 'coolvetica', helvetica;
-    color: #FF6446;
-    font-color: #FF6446;
+	font-family: 'SF Movie Poster', helvetica;
+    color: #4C4C4B;
+    font-color: #4C4C4B;
     font-padding: 2;
-    font-size:1.4em;
+    font-size:2em;
     float: right;
     font-style: normal;
 }
 
 .spanmenc{
-	font-family: 'coolvetica', helvetica;
-    color: #FFD3BC;
-    font-color: #FFD3BC;
+	font-family: 'SF Movie Poster', helvetica;
+    color: #4C4C4B;
+    font-color: #4C4C4B;
     font-padding: 2;
-    font-size:1em;
+    font-size:1.3em;
     float: right;
     font-style: normal;
 }
@@ -465,11 +495,11 @@ td > span >a{
     text-decoration: none;
 }
 td > span > a:hover{
-	color: #FF6446;
+	color: #FE7459;
     text-decoration: none;
 }
 td > span > a:active{
-	color: #FFD3BC;
+	color: #FDD5C7;
     text-decoration: none;
 }
 

@@ -9,7 +9,7 @@ var state3 = true;
 
 // create chart svg space
 var svg = d3.select('svg')
-	.attr('width', diameter+200)
+	.attr('width', diameter+250)
 	.attr('height', diameter)
     .attr('margin-top', 200);
 
@@ -40,14 +40,14 @@ function drawBubbles(newcat){
     var vis = svg.selectAll('g')
 	    .data(nodes, function(d) {return d.name;})
 	    .enter().append('g')
-        .attr('transform', function(d) { return 'translate(' + (1*d.x +(Math.random()-0.5)*30) + ',' + (1*d.y +(Math.random()-0.5)*30) + ')'; })
+        .attr('transform', function(d) { return 'translate(' + (1*d.x+100+(Math.random()-0.4)*30) + ',' + (1*d.y +(Math.random()-0.5)*10) + ')'; })
         .attr('cx', function(d){return d.x})
         .attr('cy', function(d){return d.y})
         ;
 
     vis.append('circle') 
 	    //.attr('r',0)
-        .attr('value', function(d) { return 1.05*d.r+((Math.random()-0.5) * 20); }) //this is the random traslaper
+        .attr('value', function(d) { return 1.05*d.r+((Math.random()-0.4) * 20); }) //this is the random traslaper
 	    .attr('class', function(d) { return sizeToClass(d.value)+' bubble'; })
         .attr('opacity', 0)
         .attr('catname', function(d) { return d.name; })
@@ -69,10 +69,16 @@ function drawBubbles(newcat){
         .attr('class', function(d) { return sizeToClass(d.value); })
         .attr('opacity', 0)
         .style("text-anchor", "middle")
-        .style("stroke", "5px")
         .style("fill", "#FFFFFF")
         .style("pointer-events", "none")
-        .text(function(d) { return d.name; });
+        .text(function(d) { 
+            if (d.name.length > 9){
+                return d.name.substr(0,9).concat("…")
+            } else{
+            return d.name; 
+            }
+        });
+    
     // add the div containers for tooltips with custom content
     vis.append("div")
         .attr("class", "hidden")
@@ -202,6 +208,54 @@ var main = function (){
         drawBubbles(categ);
     });
  
+    // hidden textes
+    $("#ltodo").hover(function(){
+        $('.txtodo').removeClass('hidden');
+    }, function(){
+        $('.txtodo').addClass('hidden');
+    });
+    $("#lejec").hover(function(){
+        $('.txejec').removeClass('hidden');
+    }, function(){
+        $('.txejec').addClass('hidden');
+    });
+    $("#ldipu").hover(function(){
+        $('.txdipu').removeClass('hidden');
+    }, function(){
+        $('.txdipu').addClass('hidden');
+    });
+    $("#lsena").hover(function(){
+        $('.txsena').removeClass('hidden');
+    }, function(){
+        $('.txsena').addClass('hidden');
+    });
+    $("#lgobe").hover(function(){
+        $('.txgobe').removeClass('hidden');
+    }, function(){
+        $('.txgobe').addClass('hidden');
+    });
+    $("#lopin").hover(function(){
+        $('.txopin').removeClass('hidden');
+    }, function(){
+        $('.txopin').addClass('hidden');
+    });
+    $("#lpri").hover(function(){
+        $('.txpri').removeClass('hidden');
+    }, function(){
+        $('.txpri').addClass('hidden');
+    });
+    $("#lpan").hover(function(){
+        $('.txpan').removeClass('hidden');
+    }, function(){
+        $('.txpan').addClass('hidden');
+    });
+    $("#lprd").hover(function(){
+        $('.txprd').removeClass('hidden');
+    }, function(){
+        $('.txprd').addClass('hidden');
+    });
+
+
     // icon-check
     $("#icon-check").on({
         click: function (e) {

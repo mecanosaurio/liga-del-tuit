@@ -69,16 +69,16 @@
     	<div class="col-md-1"></div>
    		<!-- 2nd column nav bar-->
     	<div class="col-md-8">
-    		<nav style="position:relative; bottom:1cm; left:0.3cm; height:10px;">
-				<a class = "selec active" value="all" href="#">TODOS</a> | | |
-				<a class = "selec" value="mx140-ejecutivo" href="#">Poder EJECUTIVO</a> | | |
-				<a class = "selec" value="mx140-diputados" href="#">DIPUTADOS</a> | | |
-				<a class = "selec" value="mx140-senadores" href="#">SENADORES</a> | | |
-				<a class = "selec" value="mx140-gobernadores" href="#">GOBERNADORES</a> | | |
-				<a class = "selec" value="mx140-opinion"href="#">LÍDERES de OPINIÓN</a> | | |
-				<a class = "selec" value="mx140-pri" href="#">PRI</a> | | |
-				<a class = "selec" value="mx140-pan" href="#">PAN</a> | | |
-				<a class = "selec" value="mx140-prd" href="#">PRD</a> | | |
+    		<nav style="position:relative; bottom:1cm; left:0.5cm; height:10px;">
+				<a id="ltodo" class = "selec active" value="all" href="#">TODOS</a> | | |
+				<a id="lejec" class = "selec" value="mx140-ejecutivo" href="#">Poder EJECUTIVO</a> | | |
+				<a id="ldipu" class = "selec" value="mx140-diputados" href="#">DIPUTADOS</a> | | |
+				<a id="lsena" class = "selec" value="mx140-senadores" href="#">SENADORES</a> | | |
+				<a id="lgobe" class = "selec" value="mx140-gobernadores" href="#">GOBERNADORES</a> | | |
+				<a id="lopin" class = "selec" value="mx140-opinion"href="#">LÍDERES de OPINIÓN</a> | | |
+				<a id="lpri"  class = "selec" value="mx140-pri" href="#">PRI</a> | | |
+				<a id="lpan"  class = "selec" value="mx140-pan" href="#">PAN</a> | | |
+				<a id="lprd"  class = "selec" value="mx140-prd" href="#">PRD</a> | | |
 			</nav>
     	</div>
     	<div class="col-md-2"></div>   		
@@ -90,17 +90,50 @@
    		    <div id="colorstrip" align="center"></div>
     	</div>
     </div>
-	
+	<!-- .. .. ... .. hidden text ROW .. .. ... .. -->
+    <div class="row">
+    	<div class="col-md-1"></div>
+   		<div class="col-md-8">
+   		   	<div class="txtodo hidden">
+		   		Incluye las cuentas de todas las categorías
+   			</div>
+			<div class="txejec hidden">
+   				Cuentas institucionales de la presidencia, directores de instituciones, gobernadores y dependencias del gobierno
+			</div>
+			<div class="txdipu hidden">
+				Cuenta institucional de la cámara y cuentas personales de aquellos diputados activos
+			</div>
+   			<div class="txsena hidden">
+				Cuenta institucional de la cámara y cuentas personales de aquellos senadores activos
+		   	</div>
+			<div class="txgobe hidden">
+				Incluye la cuenta de cada uno de los Gobernadores de las 32 entidades federativas
+			</div>
+			<div class="txopin hidden">
+   				Cuentas institucionales de medios de comunicación, organizaciones de la sociedad civil e instituciones académicas
+			</div>
+   			<div class="txpri hidden">
+   				Cuentas institucionales y de personalidades destacadas del Partido Revolucionario Institucional
+		   	</div>
+			<div class="txpan hidden">
+				Cuentas institucionales y de personalidades destacadas del Partido Acción Nacional
+	   		</div>
+			<div class="txprd hidden">
+				Cuentas institucionales y de personalidades destacadas del Partido de la Revolución Democrática
+		   	</div>
+    	</div>
+    	<div class="col-md-2"></div>   		
+    </div>
 
     <!-- .. .. ... .. MAIN chart SECTION .. .. ... .. -->
 	<div class="row mainchart">
    		<!-- 1st column empty-->
-		<div class="col-md-2" style="position:relative; vertical-align: middle;"></div>
+		<div class="col-md-1" style="position:relative; vertical-align: middle;"></div>
     	<!-- 2nd column chart-->
-		<div class="col-md-6" style="position:relative; align: middle;  vertical-align: top;">
+		<div class="col-md-7" style="position:relative; align: middle;  vertical-align: top;">
 		    <!-- .. .. ... .. chart SECT .. .. ... .. -->
 			<section id="chart">
-				<svg width="850" height="650"></svg>
+				<svg width="900" height="650"></svg>
 			</section>
 		</div>
 		<!-- 3rd column legend table-->
@@ -154,7 +187,7 @@
 			<p  id="text-info" style="opacity: 0; z-index=1;">
 					Haz click en las distintas categorías
 					y descubre qué es lo más mencionado
-					por cada grupo de usuarios. (<a href="#">...</a>)
+					por cada grupo de usuarios.
  			</p>
 		</div>
 		<div class="col-md-1" ></div>
@@ -169,7 +202,7 @@
 		<div class="col-md-5 foot1">
 			<span>(C) 2015 Todos los derechos reservados. <br>
 			Este es un proyecto de Ethos Laboratorio de Políticas Públicas <br>
-			en colaboración con <a href="http://overdriven-labs.ml" target="_blank" style="font-color: silver; color: silver">( ⧉ ⦣ ⧉ )</a>.<br><br></span>
+			en colaboración con <a href="http://overdriven-labs.ml" target="_blank" style="font-color: #A0A0A0; color: #A0A0A0">Overdriven Labs</a>.<br><br></span>
 		</div>
 		<div class="col-md-3"></div>
 		<div class="col-md-2 foot2">
@@ -268,11 +301,11 @@
 				</li>
 				<li><b>Gobernadores:</b> Incluye la cuenta de cada uno de los Gobernadores de las 32 entidades federativas.
 				</li>
-				<li><b>PRI:</b> Cuentas insitucionales y de personalidades destacadas del Partido Revolucionario Institucional.
+				<li><b>PRI:</b> Cuentas instiucionales y de personalidades destacadas del Partido Revolucionario Institucional.
 				</li>
-				<li><b>PAN:</b> Cuentas insitucionales y de personalidades destacadas del Partido Acción Nacional.
+				<li><b>PAN:</b> Cuentas instiucionales y de personalidades destacadas del Partido Acción Nacional.
 				</li>
-				<li><b>PRD:</b> Cuentas insitucionales y de personalidades destacadas del Partido de la Revolución Democrática.
+				<li><b>PRD:</b> Cuentas instiucionales y de personalidades destacadas del Partido de la Revolución Democrática.
 				</li>
 				<li><b>Todos:</b> Esta categoría incluye a todas las cuentas incluidas en las otras categorías.
 				</li>
@@ -292,7 +325,7 @@
 			<p>La aplicación se actualiza de manera continua reflejando la información recién generada por las cuentas monitoreadas. El conteo de palabras corresponde a un periodo de tiempo variable para cada categoría, segun la frecuencia de publicación de las cuentas corresponientes.</p>
 			<p><b>Créditos: </b> José Luis Chicoma (Ethos), Alejandra Brambila (Ethos),Ana Dávila (Ethos), Maricarment Medina Mora (Ethos), Cristina de Uriarte (Ethos) y Emmanuel Anguiano-Hernández (Overdriven Labs).</p>
 			<br><br>
-			<p align="center">(c) 2015 Todos los derechos reservados.<br>Ethos Laboratorio de Políticas Públicas<br> (Avance-análisis estudios e investigación para el desarrollo A.C.)</p>
+			<p align="center">(c) 2015 Todos los derechos reservados.<br>Ethos Laboratorio de Políticas Públicas<br> (Avance-Análisis Estudios e Investigación para el Desarrollo A.C.)</p>
 		</div>
 	</div>
 </div>
