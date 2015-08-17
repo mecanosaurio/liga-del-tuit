@@ -128,9 +128,9 @@ circle {
 
 .bubble:hover {
 	/*fill: #222222;*/
-	transform: scale(1.25);
-	stroke-color: white;
-	cursor: ;
+	transform: scale(1.2);
+	border-radius: 45px 45px 45px 45px;
+	cursor: pointer;
 }
 
 
@@ -501,6 +501,15 @@ td > span > a:hover{
 td > span > a:active{
 	color: #FDD5C7;
     text-decoration: none;
+}
+
+.twend{
+	font-family: 'SF Movie Poster', helvetica;
+    color: #4C4C4B;
+    font-color: #4C4C4B;
+    font-size:2em;
+    float: left;
+    display: block;
 }
 
 

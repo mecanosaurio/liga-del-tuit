@@ -2,7 +2,7 @@
 :)
 */
 var diameter = 650;
-var newcat = "mx140-opinion";
+var newcat = "all";
 var state1 = true;
 var state2 = true;
 var state3 = true;
