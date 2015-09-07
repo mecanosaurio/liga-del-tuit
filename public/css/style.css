@@ -77,7 +77,7 @@ gray3: #8C8C8B;
     color: #FE7459;
     text-decoration: none;
 }
-.selec:active {
+.selec.active {
     color: #FE7459;
     text-decoration: none;
 }
@@ -112,9 +112,10 @@ gray3: #8C8C8B;
 	width: 100%;
 	text-align: center;
 	/*float: center;*/
-	font-family: 'SF Movie Poster', helvetica;
+	font-family: 'SF Movie', helvetica;
 	font-style: normal;
 	color: #FFFFFF;
+	z-index: 100;
 }
 
 
@@ -413,6 +414,8 @@ footer {
     font-size:13px;
     opacity: 0.9;
     z-index: 5;
+  	line-height: 110%
+
 }
 
 .twcontainer img{
@@ -513,8 +516,13 @@ td > span > a:active{
 }
 
 .ender1{
+	font-family: 'SF Movie Poster', helvetica;
 	font-size:1.5em;
 	font-style: underline;
+}
+
+.ender2{
+	line-height: 110%
 }
 
 

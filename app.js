@@ -17,9 +17,7 @@ Its structure/procedure is as follows:
 // 1. invoke requirements
 var port = (process.env.PORT || 5000),
 	express = require('express'),
-	twitter = require('twitter'),
-	natural = require('natural'),
-	cronJob = require('cron');
+	twitter = require('twitter');
 var cool = require('cool-ascii-faces');
 	
 // 2. express app basic config

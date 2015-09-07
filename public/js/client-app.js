@@ -9,7 +9,7 @@ var state3 = true;
 
 // create chart svg space
 var svg = d3.select('svg')
-	.attr('width', diameter+250)
+	.attr('width', diameter+350)
 	.attr('height', diameter)
     .attr('margin-top', 200);
 
@@ -40,14 +40,17 @@ function drawBubbles(newcat){
     var vis = svg.selectAll('g')
 	    .data(nodes, function(d) {return d.name;})
 	    .enter().append('g')
-        .attr('transform', function(d) { return 'translate(' + (1*d.x+100+(Math.random()-0.4)*30) + ',' + (1*d.y +(Math.random()-0.5)*10) + ')'; })
+        .attr('transform', function(d) { 
+            //this is the random distributer
+            return 'translate(' + (1.1*d.x+100+(Math.random()-0.4)*50) + ',' + (1*d.y +(Math.random()-0.5)*10) + ')'; 
+        })
         .attr('cx', function(d){return d.x})
         .attr('cy', function(d){return d.y})
         ;
 
     vis.append('circle') 
 	    //.attr('r',0)
-        .attr('value', function(d) { return 1.05*d.r+((Math.random()-0.4) * 20); }) //this is the random traslaper
+        .attr('value', function(d) { return 1.1*d.r+((Math.random()-0.4) * 10); }) //this is the random size add
 	    .attr('class', function(d) { return sizeToClass(d.value)+' bubble'; })
         .attr('opacity', 0)
         .attr('catname', function(d) { return d.name; })
@@ -89,7 +92,7 @@ function drawBubbles(newcat){
         var nr = $(this).attr('value');
         $(this).animate({
             r: nr,
-            opacity: 0.88
+            opacity: 0.90
             }, {
                 duration: Math.random()*2100,
                 step: function(now){
@@ -206,6 +209,13 @@ var main = function (){
         var categ = $(this).attr('value');
         console.log('[Updating to]: ' + categ);
         drawBubbles(categ);
+
+        $('.selec.active').removeClass('active');
+        var $this = $(this);
+        if (!$this.hasClass('active')){
+            $this.addClass('active');
+        }
+        e.preventDefault();
     });
  
     // hidden textes
